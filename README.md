@@ -3,11 +3,11 @@
 App will: 
 
 <ul> 
-  <li>Present a daily task/goal for the day upon a event</li>
+  <li>Present a daily task/goal for the day</li>
   <li>Print out a motivational quote from an API (https://zenquotes.io/)</li>
   <li>Play music</li>
   <li>Give the user a time limit for completion</li>
-  <li>Have a completion checksheet</li>
+  <li>Have a completion checklist</li>
 </ul>
 
 
