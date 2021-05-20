@@ -1,0 +1,28 @@
+body {
+    background-image: url("https://image.freepik.com/free-vector/calm-mountain-forest-wild-nature-scene-landscape-monochrome-illustration_7081-1822.jpg");
+}
+
+#timer {
+    border: solid;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+#container {
+    display: grid;
+    justify-content: center;
+    background-color: white;
+    border-style: groove;
+    background-color: slategrey;
+    
+}
+
+#header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#task {
+    font-size: 2rem;
+}
