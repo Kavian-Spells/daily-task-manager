@@ -13,7 +13,7 @@ App will:
 
 Stretch goals: 
 <ol>
-  <li>Tips for completion</li>
+  <li>Tips for completion generator</li>
   <li>Calendar of completed and not completed goals/tasks</li>
   <li>Timer relative to task difficulty</li>
   <li>Clarify the tip for completion generator</li>
