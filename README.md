@@ -16,7 +16,6 @@ Stretch goals:
   <li>Tips for completion generator</li>
   <li>Calendar of completed and not completed goals/tasks</li>
   <li>Timer relative to task difficulty</li>
-  <li>Clarify the tip for completion generator</li>
   <li>Include a "what have you learned today?" interface</li>
   <li>Statical analysis of completed tasks</li>
 <ol>
