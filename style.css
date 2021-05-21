@@ -1,0 +1,120 @@
+/*body {
+    background-image: url("https://image.freepik.com/free-vector/calm-mountain-forest-wild-nature-scene-landscape-monochrome-illustration_7081-1822.jpg");
+}*/
+
+#timer {
+    border: solid;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+#container {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    border-style: groove;
+    background-color: slategrey;
+    
+}
+
+#header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#task {
+    height: 500px;
+    width: 50vw;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: white;
+    
+}
+
+#family {
+    font-size: large;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#spiritual {
+    font-size: large;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#financial {
+    font-size: large;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#fitness {
+    font-size: large;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#career {
+    font-size: large;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#education {
+    font-size: large;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+
+#social {
+    font-size: large;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#roulette {
+    font-size: large;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#short-term {
+    font-size: large;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#middle-term {
+    font-size: large;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#long-term {
+    font-size: large;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+
