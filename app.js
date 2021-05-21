@@ -47,9 +47,17 @@ class Quotes {
     }
     fetchApi() {
         axios.get("https://zenquotes.io/api/random")
+        .then(response => {
+            console.log(response)
+            this.quote = response
+        })
     }
 } // this part is not finished
 
+
+
+let apiQuotes = new Quotes
+apiQuotes.fetchApi();
 let socialResponseOne = new Social("Call 3 Family Members");
 let socialResponseTwo = new Social("Go Anywhere Except Your House (NOT INCLUDING WORK) For At Least 3 Hours For 3 Days A Week");
 let socialResponseThree = new Social("Participate In Social Clubs or Gatherings That Have Regular Meetings");
