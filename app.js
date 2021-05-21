@@ -49,7 +49,12 @@ class Quotes {
         axios.get("https://zenquotes.io/api/random")
         .then(response => {
             console.log(response)
-            this.quote = response
+            this.quote = response.data
+        }) // getting an error, dev tools says that the response is blocked...not sure why
+    }
+    displayQuote() {
+        this.quote.map(data => {
+            document.getElementById('quotes').innerHTML = `${data.random}` // this dot notation will probably change once we see the actual results of the api response. 
         })
     }
 } // this part is not finished
