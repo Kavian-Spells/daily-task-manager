@@ -75,4 +75,3 @@ let educationResponseThree = new Education("Master A Fictional Language");
 educationResponseOne.shortTermEducation();
 educationResponseTwo.middleTermEducation();
 educationResponseThree.longTermEducation();
-

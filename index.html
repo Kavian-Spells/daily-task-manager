@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Bringer</title>
     <link  href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="audioPlayer.css" type="text/css">
 </head>
 <body>
    <div id="container">
        <h1 id="header">Goal Roulette</h1><br>
-       <h2 id="quotes">Be A Rainbow In Somebody Else's Cloud. -Somebody</h2>
+       <h2 id="quotes">Be A Rainbow In Someone Else's Cloud. <br> - Maya Angelou</h2>
        <div id="task">
            <button id="family" type="button">Family</button>
            <button id="spiritual" type="button">Spiritual</button>
@@ -26,7 +27,17 @@
            
 
        </div><br>
-       <audio controls></audio><br>
+
+        <div id="musicPlayer">
+            <audio src="" controls id="audioPlayer">
+                Sorry, your browser doesn't support these fire beats!!!
+            </audio>
+            <ul id="playlist">
+                <li class="current-song"><a href="audio-files/Steady_Enjoyment.mp3">Steady Enjoyment</a></li>
+                <li><a href="audio-files/Milan_Nightlife.mp3">Milan Nightlife</a></li>
+                <li><a href="audio-files/I_Got_This.mp3">I Got This</a></li>
+            </ul>
+        </div>
 
        <h3 id="threat">Tell Your Friends...Or Else</h3>
        <a href="https://www.google.com/search?q=facebook&rlz=1C1CHBF_enUS923US923&oq=facebook+&aqs=chrome..69i57j69i60l3.2083j0j7&sourceid=chrome&ie=UTF-8" target="_blank">Facebook</a>
@@ -36,5 +47,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
     <script src="app.js"></script>
+    <script src="audioPlayer.js"></script>
 </body>
 </html>
+
