@@ -41,6 +41,15 @@ class Education {
     }
 }
 
+class Quotes {
+    constructor() {
+        this.quote = []
+    }
+    fetchApi() {
+        axios.get("https://zenquotes.io/api/random")
+    }
+} // this part is not finished
+
 let socialResponseOne = new Social("Call 3 Family Members");
 let socialResponseTwo = new Social("Go Anywhere Except Your House (NOT INCLUDING WORK) For At Least 3 Hours For 3 Days A Week");
 let socialResponseThree = new Social("Participate In Social Clubs or Gatherings That Have Regular Meetings");
