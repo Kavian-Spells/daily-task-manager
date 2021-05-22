@@ -45,25 +45,31 @@ class Quotes {
     constructor() {
         this.quote = []
     }
-    fetchApi() {
-        axios.get("https://zenquotes.io/api/random")
+    async fetchApi() {
+        await axios.get("https://api.codetabs.com/v1/proxy/?quest=https://zenquotes.io/api/random/09c8cdd54d833aeabd5f426d210c5552e4aefef9",
+        {
+        })
         .then(response => {
-            console.log(response)
+            console.log(response.data)
             this.quote = response.data
-        }) // getting an error, dev tools says that the response is blocked...not sure why
+            this.displayQuote()
+        })
+        
+ // getting an error, dev tools says that the response is blocked...not sure why
     }
     displayQuote() {
         this.quote.map(data => {
-            document.getElementById('quotes').innerHTML = `${data.random}` // this dot notation will probably change once we see the actual results of the api response. 
+            document.getElementById('quotes').innerHTML = `${data.h}` // this dot notation will probably change once we see the actual results of the api response. 
         })
     }
 } // this part is not finished
 
 
 
-let apiQuotes = new Quotes
+let apiQuotes = new Quotes()
 apiQuotes.fetchApi();
-let socialResponseOne = new Social("Call 3 Family Members");
+apiQuotes.displayQuote();
+/*let socialResponseOne = new Social("Call 3 Family Members");
 let socialResponseTwo = new Social("Go Anywhere Except Your House (NOT INCLUDING WORK) For At Least 3 Hours For 3 Days A Week");
 let socialResponseThree = new Social("Participate In Social Clubs or Gatherings That Have Regular Meetings");
 socialResponseOne.shortTermSocial();
@@ -74,5 +80,5 @@ let educationResponseTwo = new Education("Learn A Formal Dance");
 let educationResponseThree = new Education("Master A Fictional Language");
 educationResponseOne.shortTermEducation();
 educationResponseTwo.middleTermEducation();
-educationResponseThree.longTermEducation();
+educationResponseThree.longTermEducation();*/
 
