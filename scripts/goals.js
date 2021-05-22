@@ -225,12 +225,37 @@ var medFinancialArray = [medFinancial1, medFinancial2, medFinancial3, medFinanci
 var longFinancialArray = [longFinancial1, longFinancial2, longFinancial3, longFinancial4];
 
 
-
+//Use below to call to inner HTML
 const shortSpiritRandom = Math.floor(Math.random() * shortSpiritArray.length);
 const medSpiritRandom = Math.floor(Math.random() * medSpiritArray.length);
 const longSpiritRandom = Math.floor(Math.random() * longSpiritArray.length);
 
+const shortFitnessRandom = Math.floor(Math.random() * shortFitnessArray.length);
+const medFitnessRandom = Math.floor(Math.random() * medFitnessArray.length);
+const longFitnessRandom = Math.floor(Math.random() * longFitnessArray.length);
+
+const shortEducationalRandom = Math.floor(Math.random() * shortEducationalArray.length);
+const medEducationalRandom = Math.floor(Math.random() * medEducationalArray.length);
+const longEducationalRandom = Math.floor(Math.random() * longEducationalArray.length);
+
+const shortFamilyRandom = Math.floor(Math.random() * shortFamilyArray.length);
+const medFamilyRandom = Math.floor(Math.random() * medFamilyArray.length);
+const longFamilyRandom = Math.floor(Math.random() * longFamilyArray.length);
+
+const shortCareerRandom = Math.floor(Math.random() * shortCareerArray.length);
+const medCareerRandom = Math.floor(Math.random() * medCareerArray.length);
+const longCareerRandom = Math.floor(Math.random() * longCareerArray.length);
+
+const shortSocialRandom = Math.floor(Math.random() * shortSocialArray.length);
+const medSocialRandom = Math.floor(Math.random() * medSocialArray.length);
+const longSocialRandom = Math.floor(Math.random() * longSocialArray.length);
+
+const shortFinancialRandom = Math.floor(Math.random() * shortFinancialArray.length);
+const medFinancialRandom = Math.floor(Math.random() * medFinancialArray.length);
+const longFinancialRandom = Math.floor(Math.random() * longFinancialArray.length);
+
+/*
 console.log("Your easy spirit goal is " + shortSpiritArray[shortSpiritRandom].task);
 console.log("Your medium spirit goal is " + medSpiritArray[medSpiritRandom].task);
 console.log("Your hard spirit goal is " + longSpiritArray[longSpiritRandom].task);
-
+*/
