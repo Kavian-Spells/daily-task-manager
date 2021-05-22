@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+    .container {
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 15em;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <span id="min">00</span>
+    <span id="sec">00</span>
+  </div>
+  
+  <script>
+      var sec = 0; 
+      var min = 10;
+      var secDisplay = document.getElementById('sec');
+      var minDisplay = document.getElementById('min');
+      setInterval(() => {
+        if (sec != 0) {
+          sec--;
+          if (sec < 10) secDisplay.innerHTML = '0' + sec;
+          else secDisplay.innerHTML = sec;
+        } else {
+          min--;
+          if (min < 10) minDisplay.innerHTML = '0' + min;
+          else minDisplay.innerHTML = min;
+          sec = 59;
+        }
+      }, 999);
+  </script>
+
+</body>
+
+</html>
