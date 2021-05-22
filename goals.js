@@ -88,6 +88,8 @@ class Financial extends Task{
     }
 }
 
+//example of how to call an object class = highCareer1.shortTerm();
+
 //Spiritual Goals
 var shortSpirit1 = new Spiritual("Pet a dog");
 var shortSpirit2 = new Spiritual("Go to church");
@@ -181,6 +183,8 @@ var highCareer1 = new Career("Grow your efficiency!")
 var highCareer2 = new Career("Grow your productivity!")
 var highCareer3 = new Career("Get smart!")
 var highCareer4 = new Career("Develop yourself!")
+
+
 //Career Array
 
 var shortCareerArray = [shortCareer1, shortCareer2, shortCareer3, shortCareer4, shortCareer5];
