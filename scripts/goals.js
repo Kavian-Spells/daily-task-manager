@@ -1,7 +1,13 @@
 class Task{
-    constructor(task){
+    constructor(task, category, term){
         this.task = task;
+        this.category = category;
+        this.term = term;
     }
+    printTask(){
+        console.log(this.task + " is an " + this.term + " " + this.category)
+    }
+
 }
 
 class Spiritual extends Task{
@@ -142,8 +148,8 @@ var longEducation1 = new Education("Master A Fictional Language");
 
 //Educational Array
 var shortEducationalArray = [shortEducation1];
-var medEducationArray = [medEducation1];
-var longEducationArray = [longEducation1];
+var medEducationalArray = [medEducation1];
+var longEducationalArray = [longEducation1];
 
 //Family Goals
 var shortFamily1 = new Family("Talk to a family member.")
@@ -179,17 +185,17 @@ var medCareer2 = new Career("Improve your social skills. Join a volunteer organi
 var medCareer3 = new Career("Get a promotion!")
 var medCareer4 = new Career("Start a business.")
 
-var highCareer1 = new Career("Grow your efficiency!")
-var highCareer2 = new Career("Grow your productivity!")
-var highCareer3 = new Career("Get smart!")
-var highCareer4 = new Career("Develop yourself!")
+var longCareer1 = new Career("Grow your efficiency!")
+var longCareer2 = new Career("Grow your productivity!")
+var longCareer3 = new Career("Get smart!")
+var longCareer4 = new Career("Develop yourself!")
 
 
 //Career Array
 
 var shortCareerArray = [shortCareer1, shortCareer2, shortCareer3, shortCareer4, shortCareer5];
 var medCareerArray = [medCareer1, medCareer2, medCareer3, medCareer4];
-var longCareerArray = [highCareer1, highCareer2, highCareer3, highCareer4];
+var longCareerArray = [longCareer1, longCareer2, longCareer3, longCareer4];
 
 //Social Goals
 var shortSocial1 = new Social("Call 3 Family Members");
@@ -259,3 +265,57 @@ console.log("Your easy spirit goal is " + shortSpiritArray[shortSpiritRandom].ta
 console.log("Your medium spirit goal is " + medSpiritArray[medSpiritRandom].task);
 console.log("Your hard spirit goal is " + longSpiritArray[longSpiritRandom].task);
 */
+
+shortSpiritAnswer = shortSpiritArray[shortSpiritRandom].task;
+medSpiritAnswer = medSpiritArray[medSpiritRandom].task;
+longSpiritAnswer = longSpiritArray[longSpiritRandom].task;
+
+shortFitnessAnswer = shortFitnessArray[shortFitnessRandom].task;
+medFitnessAnswer = medFitnessArray[medFitnessRandom].task;
+longFitnessAnswer = longFitnessArray[longFitnessRandom].task;
+
+shortEducationalAnswer = shortEducationalArray[shortEducationalRandom].task;
+medEducationalAnswer = medEducationalArray[medEducationalRandom].task;
+longEducationalAnswer = longEducationalArray[longEducationalRandom].task;
+
+shortFamilyAnswer = shortFamilyArray[shortFamilyRandom].task;
+medFamilyAnswer = medFamilyArray[medFamilyRandom].task;
+longFamilyAnswer = longFamilyArray[longFamilyRandom].task;
+
+shortCareerAnswer = shortCareerArray[shortCareerRandom].task;
+medCareerAnswer = medCareerArray[medCareerRandom].task;
+longCareerAnswer = longCareerArray[longCareerRandom].task;
+
+shortSocialAnswer = shortSocialArray[shortSocialRandom].task;
+medSocialAnswer = medSocialArray[medSocialRandom].task;
+longSocialAnswer = longSocialArray[longSocialRandom].task;
+
+shortFinancialAnswer = shortFinancialArray[shortFinancialRandom].task;
+medFinancialAnswer = medFinancialArray[medFinancialRandom].task;
+longFinancialAnswer = longFinancialArray[longFinancialRandom].task;
+
+
+$("#family").click(function(){
+    if(document.getElementById("shortTerm").checked == true){
+        document.getElementById("familyAnswer").value = shortFamilyAnswer;
+    }
+    else if(document.getElementById("midTerm").checked == true){
+        document.getElementById("familyAnswer").value = medFamilyAnswer;
+    }
+    else if(document.getElementById("longTerm").checked == true){
+        document.getElementById("familyAnswer").value = longFamilyAnswer;
+    } 
+})
+
+$("#spiritual").click(function(){
+    if(document.getElementById("shortTerm").checked == true){
+        document.getElementById("spiritualAnswer").value = shortSpiritAnswer;
+    }
+    else if(document.getElementById("midTerm").checked == true){
+        document.getElementById("spiritualAnswer").value = medSpiritAnswer;
+    }
+    else if(document.getElementById("longTerm").checked == true){
+        document.getElementById("spiritualAnswer").value = longSpiritAnswer;
+    } 
+})
+

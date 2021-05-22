@@ -4,7 +4,7 @@
     education: ["Read An Article About A Topic You Are Normally Disintereted In", "Learn A Formal Dance", "Learn To Fluently Speak A Fictional Language"]
 };
 
-console.log(taskForce.social[0] + " " + taskForce.terms[0] + " " + taskForce.education[0]);*/
+console.log(taskForce.social[0] + " " + taskForce.terms[0] + " " + taskForce.education[0]);
 
 
 
@@ -75,3 +75,4 @@ let educationResponseThree = new Education("Master A Fictional Language");
 educationResponseOne.shortTermEducation();
 educationResponseTwo.middleTermEducation();
 educationResponseThree.longTermEducation();
+*/
