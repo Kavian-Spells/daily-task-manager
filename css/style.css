@@ -9,6 +9,9 @@
     right: 0;
 }
 
+textarea{
+    resize: none;
+}
 
 #container {
     padding: 0;
@@ -30,8 +33,7 @@
 }
 
 #task {
-    height: 500px;
-    width: 50vw;
+    
     font-size: 2rem;
     display: flex;
     flex-direction: column;
