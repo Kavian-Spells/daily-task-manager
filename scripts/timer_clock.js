@@ -5,7 +5,7 @@ function startTimer(m,s)
   {
     if (m == 0)
     {
-      clearTimeout(t);
+      return(t); //to stop the timer use return rather than function...
     }
     else if (m != 0)
     {
@@ -16,3 +16,5 @@ function startTimer(m,s)
   s = s-1;
   t=setTimeout(function(){startTimer(m,s)},1000);
 }
+
+//add function for radio button choosen
