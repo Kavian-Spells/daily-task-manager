@@ -12,34 +12,46 @@
    <div id="container">
        <h1 id="header">Goal Roulette</h1><br>
        <h2 id="quotes">Be A Rainbow In Someone Else's Cloud. <br> - Maya Angelou</h2>
-       <div id="task">
-           <button id="family" type="button">Family</button>
-           <button id="spiritual" type="button">Spiritual</button>
-           <button id="financial" type="button">Financial</button>
-           <button id="fitness" type="button">Fitness</button>
-           <button id="career" type="button">Career</button>
-           <button id="education" type="button">Education</button>
-           <button id="social" type="button">Social</button>
-           <div>
-            <textarea name="" id="familyAnswer" cols="25" rows="4"></textarea>
-            <textarea name="" id="spiritualAnswer" cols="25" rows="4"></textarea>
-            <textarea name="" id="financialAnswer" cols="25" rows="4"></textarea>
-            <textarea name="" id="fitnessAnswer" cols="25" rows="4"></textarea>
-            <textarea name="" id="careerAnswer" cols="25" rows="4"></textarea>
-            <textarea name="" id="educationAnswer" cols="25" rows="4"></textarea>
-            <textarea name="" id="socialAnswer" cols="25" rows="4"></textarea>
+       <div id="answerContainer">
+        <div id="answerBox">
+            <div id="taskBox">
+                <button id="family" type="button">Family</button>
+                <textarea name="" id="familyAnswer"></textarea>
+                <button id="spiritual" type="button" >Spiritual</button>
+                <textarea name="" id="spiritualAnswer" ></textarea>
+                <button id="financial" type="button">Financial</button>
+                <textarea name="" id="financialAnswer" ></textarea>
+                <button id="fitness" type="button">Fitness</button>
+                <textarea name="" id="fitnessAnswer" ></textarea>
+                <button id="career" type="button">Career</button>
+                <textarea name="" id="careerAnswer" ></textarea>
+                <button id="education" type="button">Education</button>
+                <textarea name="" id="educationAnswer" ></textarea>
+                <button id="social" type="button">Social</button>
+                <textarea name="" id="socialAnswer" ></textarea>
+             </div><br>
            </div>
-           
-        </div><br>
-           <div id="choice">
-                <input type="radio" id="roulette" name="choice" value="roulette"> <label for="roulette">Roulette</label>
+           <div>
+               <p>First pick what time frame of a goal you want!</p>
+            <div id="choice">
                 <input type="radio" id="shortTerm" name="choice" value="short-term"> <label for="short-term">Short-Term</label>
                 <input type="radio" id="midTerm" name="choice" value="mid-term"> <label for="mid-term">Mid-Term</label>
                 <input type="radio" id="longTerm" name="choice" value="long-term"> <label for="long-term">Long-Term</label>
-            </div>
-            <button onClick = "startTimer(0,5)">Start</button>
+                </div>
 
-            <p id = "timer">00:00</p>
+           </div>
+            
+
+       </div>
+       
+       
+       <div>
+        <button id="startButton" onClick = "startTimer(0,5)">Start</button>
+        <p id = "timer">00:00</p>
+        <button id="rouletteButton">Roulette!</button>
+       </div>
+            
+            
 <!--
 <div id="musicPlayer">
             <audio src="" controls id="audioPlayer">
