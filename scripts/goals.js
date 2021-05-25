@@ -170,13 +170,21 @@ var longFitnessArray = [longFitness1, longFitness2, longFitness3, longFitness4];
 
 //Educational Goals
 var shortEducation1 = new Education("Read An Article About A Topic You Are Normally Disintereted In");
+var shortEducation2 = new Education("Learn A New Word");
+var shortEducation3 = new Education("Learn Something New About A Foreign Country");
+
 var medEducation1 = new Education("Learn A Formal Dance");
+var medEducation2 = new Education("Read A Non-Fiction Novel");
+var medEducation3 = new Education("Learn How To Fix Something; i.e. Fix A Clogged Sink, Replace Brake Pads, etc...");
+
 var longEducation1 = new Education("Master A Fictional Language");
+var longEducation2 = new Education("Earn An Official Certificate In Any Trade Or Skill");
+var longEducation3 = new Education("Earn New College Credits In Any Subject")
 
 //Educational Array
-var shortEducationalArray = [shortEducation1];
-var medEducationalArray = [medEducation1];
-var longEducationalArray = [longEducation1];
+var shortEducationalArray = [shortEducation1, shortEducation2, shortEducation3];
+var medEducationalArray = [medEducation1, medEducation2, medEducation3];
+var longEducationalArray = [longEducation1, longEducation2, longEducation3];
 
 //Family Goals
 var shortFamily1 = new Family("Talk to a family member.")
@@ -226,15 +234,21 @@ var longCareerArray = [longCareer1, longCareer2, longCareer3, longCareer4];
 
 //Social Goals
 var shortSocial1 = new Social("Call 3 Family Members");
+var shortSocial2 = new Social("Call 3 Friends You Haven't Seen In A While");
+var shortSocial3 = new Social("Engage A Stranger In Conversation");
 
 var medSocial1 = new Social("Go Anywhere Except Your House (NOT INCLUDING WORK) For At Least 3 Hours For 3 Days A Week");
+var medSocial2 = new Social("Do Something That Takes You Out Of Your Comfort Zone");
+var medSocial3 = new Social("Go Dancing Once A Week")
 
 var longSocial1 = new Social("Participate In Social Clubs or Gatherings That Have Regular Meetings");
+var longSocial2 = new Social("Make At Least One New Friend");
+var longSocial3 = new Social("Actively Participate In A Charity/Volunteer Organization");
 
 //Social Array
-var shortSocialArray = [shortSocial1];
-var medSocialArray = [medSocial1];
-var longSocialArray = [longSocial1];
+var shortSocialArray = [shortSocial1, shortSocial2, shortSocial3];
+var medSocialArray = [medSocial1, medSocial2, medSocial3];
+var longSocialArray = [longSocial1, longSocial2, longSocial3];
 
 //Financial Goals
 var shortFinancial1 = new Financial("Save $3,000 for emergencies");
