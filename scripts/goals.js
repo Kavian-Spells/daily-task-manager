@@ -319,3 +319,62 @@ $("#spiritual").click(function(){
     } 
 })
 
+$("#financial").click(function(){
+    if(document.getElementById("shortTerm").checked == true){
+        document.getElementById("financialAnswer").value = shortFinancialAnswer;
+    }
+    else if(document.getElementById("midTerm").checked == true){
+        document.getElementById("financialAnswer").value = medFinancialAnswer;
+    }
+    else if(document.getElementById("longTerm").checked == true){
+        document.getElementById("financialAnswer").value = longFinancialAnswer;
+    } 
+})
+
+$("#fitness").click(function(){
+    if(document.getElementById("shortTerm").checked == true){
+        document.getElementById("fitnessAnswer").value = shortFitnessAnswer;
+    }
+    else if(document.getElementById("midTerm").checked == true){
+        document.getElementById("fitnessAnswer").value = medFitnessAnswer;
+    }
+    else if(document.getElementById("longTerm").checked == true){
+        document.getElementById("fitnessAnswer").value = longFitnessAnswer;
+    } 
+})
+
+$("#career").click(function(){
+    if(document.getElementById("shortTerm").checked == true){
+        document.getElementById("careerAnswer").value = shortCareerAnswer;
+    }
+    else if(document.getElementById("midTerm").checked == true){
+        document.getElementById("careerAnswer").value = medCareerAnswer;
+    }
+    else if(document.getElementById("longTerm").checked == true){
+        document.getElementById("careerAnswer").value = longCareerAnswer;
+    } 
+})
+
+$("#education").click(function(){
+    if(document.getElementById("shortTerm").checked == true){
+        document.getElementById("educationAnswer").value = shortEducationalAnswer;
+    }
+    else if(document.getElementById("midTerm").checked == true){
+        document.getElementById("educationAnswer").value = medEducationalAnswer;
+    }
+    else if(document.getElementById("longTerm").checked == true){
+        document.getElementById("educationAnswer").value = longEducationalAnswer;
+    } 
+})
+
+$("#social").click(function(){
+    if(document.getElementById("shortTerm").checked == true){
+        document.getElementById("socialAnswer").value = shortSocialAnswer;
+    }
+    else if(document.getElementById("midTerm").checked == true){
+        document.getElementById("socialAnswer").value = medSocialAnswer;
+    }
+    else if(document.getElementById("longTerm").checked == true){
+        document.getElementById("socialAnswer").value = longSocialAnswer;
+    } 
+})
