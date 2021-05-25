@@ -94,6 +94,33 @@ class Financial extends Task{
     }
 }
 
+class Quotes {
+    constructor() {
+        this.quote = []
+    }
+    async fetchApi() {
+        await axios.get("https://api.codetabs.com/v1/proxy/?quest=https://zenquotes.io/api/random/09c8cdd54d833aeabd5f426d210c5552e4aefef9",
+        {
+        })
+        .then(response => {
+            console.log(response.data)
+            this.quote = response.data
+            this.displayQuote()
+        })
+        
+ // getting an error, dev tools says that the response is blocked...not sure why
+    }
+    displayQuote() {
+        this.quote.map(data => {
+            document.getElementById('quotes').innerHTML = `${data.h}` // this dot notation will probably change once we see the actual results of the api response. 
+        })
+    }
+}
+
+let apiQuotes = new Quotes
+apiQuotes.fetchApi();
+apiQuotes.displayQuote();
+
 //example of how to call an object class = highCareer1.shortTerm();
 
 //Spiritual Goals
