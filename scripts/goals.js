@@ -100,7 +100,7 @@ class Quotes {
     }
     async fetchApi() {
         await axios.get("https://api.codetabs.com/v1/proxy/?quest=https://zenquotes.io/api/random/09c8cdd54d833aeabd5f426d210c5552e4aefef9",
-        {
+        { 
         })
         .then(response => {
             console.log(response.data)
@@ -144,6 +144,7 @@ var longSpirit5 = new Spiritual("Forgive yourself");
 var shortSpiritArray = [shortSpirit1, shortSpirit2, shortSpirit3, shortSpirit4];
 var medSpiritArray = [medSpirit1, medSpirit2, medSpirit3, medSpirit4];
 var longSpiritArray = [longSpirit1, longSpirit2, longSpirit3, longSpirit4];
+var randomSpiritArray = [shortSpirit1, shortSpirit2, shortSpirit3, shortSpirit4, medSpirit1, medSpirit2, medSpirit3, medSpirit4, longSpirit1, longSpirit2, longSpirit3, longSpirit4]
 
 //Fitness Goals
 var shortFitness1 = new Fitness("Get 6-pack abs for the summer")
@@ -165,6 +166,7 @@ var longFitness5 = new Fitness("Stay home and use the race day to recover from y
 var shortFitnessArray = [shortFitness1, shortFitness2, shortFitness3, shortFitness4];
 var medFitnessArray = [medFitness1, medFitness2, medFitness3, medFitness4];
 var longFitnessArray = [longFitness1, longFitness2, longFitness3, longFitness4];
+var randomFitnessArray = [shortFitness1, shortFitness2, shortFitness3, shortFitness4, medFitness1, medFitness2, medFitness3, medFitness4, longFitness1, longFitness2, longFitness3, longFitness4, longFitness5]
 
 
 
@@ -185,6 +187,7 @@ var longEducation3 = new Education("Earn New College Credits In Any Subject")
 var shortEducationalArray = [shortEducation1, shortEducation2, shortEducation3];
 var medEducationalArray = [medEducation1, medEducation2, medEducation3];
 var longEducationalArray = [longEducation1, longEducation2, longEducation3];
+var randomEducationArray = [shortEducation1, shortEducation2, shortEducation3, medEducation1, medEducation2, medEducation3, longEducation1, longEducation2, longEducation3]
 
 //Family Goals
 var shortFamily1 = new Family("Talk to a family member.")
@@ -207,6 +210,7 @@ var longFamily4 = new Family("Make an emergency safety plan. Plan out escape rou
 var shortFamilyArray = [shortFamily1, shortFamily2, shortFamily3, shortFamily4];
 var medFamilyArray = [medFamily1, medFamily2, medFamily3, medFamily4];
 var longFamilyArray = [longFamily1, longFamily2, longFamily3, longFamily4];
+var randomFamilyArray = [shortFamily1, shortFamily2, shortFamily3, shortFamily4, medFamily1, medFamily2, medFamily3, medFamily4, longFamily1, longFamily2, longFamily3, longFamily4]
 
 //Career Goals
 var shortCareer1 = new Career("Sell yourself")
@@ -231,6 +235,7 @@ var longCareer4 = new Career("Develop yourself!")
 var shortCareerArray = [shortCareer1, shortCareer2, shortCareer3, shortCareer4, shortCareer5];
 var medCareerArray = [medCareer1, medCareer2, medCareer3, medCareer4];
 var longCareerArray = [longCareer1, longCareer2, longCareer3, longCareer4];
+var randomCareerArray = [shortCareer1, shortCareer2, shortCareer3, shortCareer4, shortCareer5, medCareer1, medCareer2, medCareer3, medCareer4, longCareer1, longCareer2, longCareer3, longCareer4]
 
 //Social Goals
 var shortSocial1 = new Social("Call 3 Family Members");
@@ -249,6 +254,7 @@ var longSocial3 = new Social("Actively Participate In A Charity/Volunteer Organi
 var shortSocialArray = [shortSocial1, shortSocial2, shortSocial3];
 var medSocialArray = [medSocial1, medSocial2, medSocial3];
 var longSocialArray = [longSocial1, longSocial2, longSocial3];
+var randomSocialArray = [shortSocial1, shortSocial2, shortSocial3, medSocial1, medSocial2, medSocial3, longSocial1, longSocial2, longSocial3]
 
 //Financial Goals
 var shortFinancial1 = new Financial("Save $3,000 for emergencies");
@@ -270,36 +276,44 @@ var longFinancial4 = new Financial("Buy daily lottery tickets and pray");
 var shortFinancialArray = [shortFinancial1, shortFinancial2, shortFinancial3, shortFinancial4];
 var medFinancialArray = [medFinancial1, medFinancial2, medFinancial3, medFinancial4];
 var longFinancialArray = [longFinancial1, longFinancial2, longFinancial3, longFinancial4];
+var randomFinancialArray = [shortFinancial1, shortFinancial2, shortFinancial3, shortFinancial4, medFinancial1, medFinancial2, medFinancial3, medFinancial4, longFinancial1, longFinancial2, longFinancial3, longFinancial4]
 
 
 //Use below to call to inner HTML
 const shortSpiritRandom = Math.floor(Math.random() * shortSpiritArray.length);
 const medSpiritRandom = Math.floor(Math.random() * medSpiritArray.length);
 const longSpiritRandom = Math.floor(Math.random() * longSpiritArray.length);
+const randomSpirit = Math.floor(Math.random() * randomSpiritArray.length);
 
 const shortFitnessRandom = Math.floor(Math.random() * shortFitnessArray.length);
 const medFitnessRandom = Math.floor(Math.random() * medFitnessArray.length);
 const longFitnessRandom = Math.floor(Math.random() * longFitnessArray.length);
+const randomFitness = Math.floor(Math.random() * randomFitnessArray.length);
 
 const shortEducationalRandom = Math.floor(Math.random() * shortEducationalArray.length);
 const medEducationalRandom = Math.floor(Math.random() * medEducationalArray.length);
 const longEducationalRandom = Math.floor(Math.random() * longEducationalArray.length);
+const randomEducation = Math.floor(Math.random() * randomEducationArray.length);
 
 const shortFamilyRandom = Math.floor(Math.random() * shortFamilyArray.length);
 const medFamilyRandom = Math.floor(Math.random() * medFamilyArray.length);
 const longFamilyRandom = Math.floor(Math.random() * longFamilyArray.length);
+const randomFamily = Math.floor(Math.random() * randomFamilyArray.length);
 
 const shortCareerRandom = Math.floor(Math.random() * shortCareerArray.length);
 const medCareerRandom = Math.floor(Math.random() * medCareerArray.length);
 const longCareerRandom = Math.floor(Math.random() * longCareerArray.length);
+const randomCareer = Math.floor(Math.random() * randomCareerArray.length);
 
 const shortSocialRandom = Math.floor(Math.random() * shortSocialArray.length);
 const medSocialRandom = Math.floor(Math.random() * medSocialArray.length);
 const longSocialRandom = Math.floor(Math.random() * longSocialArray.length);
+const randomSocial = Math.floor(Math.random() * randomSocialArray.length);
 
 const shortFinancialRandom = Math.floor(Math.random() * shortFinancialArray.length);
 const medFinancialRandom = Math.floor(Math.random() * medFinancialArray.length);
 const longFinancialRandom = Math.floor(Math.random() * longFinancialArray.length);
+const randomFinancial = Math.floor(Math.random() * randomFinancialArray.length);
 
 /*
 console.log("Your easy spirit goal is " + shortSpiritArray[shortSpiritRandom].task);
@@ -310,35 +324,46 @@ console.log("Your hard spirit goal is " + longSpiritArray[longSpiritRandom].task
 shortSpiritAnswer = shortSpiritArray[shortSpiritRandom].task;
 medSpiritAnswer = medSpiritArray[medSpiritRandom].task;
 longSpiritAnswer = longSpiritArray[longSpiritRandom].task;
+rouletteSpiritAnswer = randomSpiritArray[randomSpirit].task;
 
 shortFitnessAnswer = shortFitnessArray[shortFitnessRandom].task;
 medFitnessAnswer = medFitnessArray[medFitnessRandom].task;
 longFitnessAnswer = longFitnessArray[longFitnessRandom].task;
+rouletteFitnessAnswer = randomFitnessArray[randomFitness].task;
 
 shortEducationalAnswer = shortEducationalArray[shortEducationalRandom].task;
 medEducationalAnswer = medEducationalArray[medEducationalRandom].task;
 longEducationalAnswer = longEducationalArray[longEducationalRandom].task;
+rouletteEducationalAnswer = randomEducationArray[randomEducation].task;
 
 shortFamilyAnswer = shortFamilyArray[shortFamilyRandom].task;
 medFamilyAnswer = medFamilyArray[medFamilyRandom].task;
 longFamilyAnswer = longFamilyArray[longFamilyRandom].task;
+rouletteFamilyAnswer = randomFamilyArray[randomFamily].task;
 
 shortCareerAnswer = shortCareerArray[shortCareerRandom].task;
 medCareerAnswer = medCareerArray[medCareerRandom].task;
 longCareerAnswer = longCareerArray[longCareerRandom].task;
+rouletteCareerAnswer = randomCareerArray[randomCareer].task;
 
 shortSocialAnswer = shortSocialArray[shortSocialRandom].task;
 medSocialAnswer = medSocialArray[medSocialRandom].task;
 longSocialAnswer = longSocialArray[longSocialRandom].task;
+rouletteSocialAnswer = randomSocialArray[randomSocial].task;
 
 shortFinancialAnswer = shortFinancialArray[shortFinancialRandom].task;
 medFinancialAnswer = medFinancialArray[medFinancialRandom].task;
 longFinancialAnswer = longFinancialArray[longFinancialRandom].task;
+rouletteFinancialAnswer = randomFinancialArray[randomFinancial].task;
+
+
+
 
 
 $("#family").click(function(){
     if(document.getElementById("shortTerm").checked == true){
         document.getElementById("familyAnswer").value = shortFamilyAnswer;
+        
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("familyAnswer").value = medFamilyAnswer;
@@ -346,6 +371,7 @@ $("#family").click(function(){
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("familyAnswer").value = longFamilyAnswer;
     } 
+    
 })
 
 $("#spiritual").click(function(){
@@ -418,4 +444,14 @@ $("#social").click(function(){
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("socialAnswer").value = longSocialAnswer;
     } 
+})
+
+$("#rouletteButton").click(() => {
+    document.getElementById("familyAnswer").value = rouletteFamilyAnswer;
+    document.getElementById("spiritualAnswer").value = rouletteSpiritAnswer;
+    document.getElementById("financialAnswer").value = rouletteFinancialAnswer;
+    document.getElementById("fitnessAnswer").value = rouletteFitnessAnswer;
+    document.getElementById("careerAnswer").value = rouletteCareerAnswer;
+    document.getElementById("educationAnswer").value = rouletteEducationalAnswer;
+    document.getElementById("socialAnswer").value = rouletteSocialAnswer;
 })
