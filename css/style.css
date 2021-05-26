@@ -112,9 +112,11 @@ h3 {
 }
 
 #termHeader {
+    display: flex;
     background-color: gainsboro;
     border-style: inherit;
     color: steelblue;
+    justify-content: space-around;
 }
 
 #choice{
