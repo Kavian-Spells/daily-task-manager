@@ -1,6 +1,7 @@
-/*body {
+body{
     background-image: url("https://image.freepik.com/free-vector/calm-mountain-forest-wild-nature-scene-landscape-monochrome-illustration_7081-1822.jpg");
-}*/
+}
+   
 
 #timer {
     border: solid;
@@ -24,8 +25,7 @@ textarea{
     display: grid;
     grid-template-columns: 33% 66%;
     border: solid;
-    width: 500px;
-    height: 500px;
+    width: 50%;
     justify-items: center;
     align-items: center;
 
@@ -75,8 +75,10 @@ p{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     
 }
+
 
 #startButton{
     font-size: 50px;
@@ -98,7 +100,7 @@ p{
     display: grid;
     border: solid;
     height: 300px;
-    width: 300px;
+    width: 100%;
     justify-content: center;
     grid-template-columns: 33% 66%;
     justify-items: center;
@@ -124,9 +126,26 @@ p{
     
 }
 
+
+#quotes{
+    text-align: center;
+}
+
+#headerContainer{
+    background: slategrey;
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
 #header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
 }
+
 
 #task {
     
