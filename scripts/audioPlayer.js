@@ -1,14 +1,15 @@
 audioPlayer();
 function audioPlayer() {
-    var currentSong = 0;
-    $('#audioPlayer')[0].src = $('#playlist li a')[0];
+    var currentSong = Math.floor(Math.random()*3);
+    $('#audioPlayer')[0].src = $('#playlist li a')[currentSong];
     $('#audioPlayer')[0].play();
+    $(`#${currentSong}`).addClass("current-song");
+
     $('#playlist li a').click(function(event) {
         event.preventDefault();
         $('#audioPlayer')[0].src = this;
         $('#audioPlayer')[0].play();
         $("#playlist li").removeClass("current-song");
-        currentSong = $(this).parent().index();
         $(this).parent().addClass("current-song");
     });
 
@@ -22,4 +23,3 @@ function audioPlayer() {
                 $('#audioPlayer')[0].play();
     })
 }
-
