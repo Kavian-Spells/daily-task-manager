@@ -271,8 +271,8 @@ var longFinancial1 = new Financial("Save $1 million for retirement");
 var longFinancial2 = new Financial("Get your 401k match from your employer");
 var longFinancial3 = new Financial("Invest in a target date fund");
 var longFinancial4 = new Financial("Buy daily lottery tickets and pray");
-//Financial Array
 
+//Financial Array
 var shortFinancialArray = [shortFinancial1, shortFinancial2, shortFinancial3, shortFinancial4];
 var medFinancialArray = [medFinancial1, medFinancial2, medFinancial3, medFinancial4];
 var longFinancialArray = [longFinancial1, longFinancial2, longFinancial3, longFinancial4];
@@ -315,11 +315,6 @@ const medFinancialRandom = Math.floor(Math.random() * medFinancialArray.length);
 const longFinancialRandom = Math.floor(Math.random() * longFinancialArray.length);
 const randomFinancial = Math.floor(Math.random() * randomFinancialArray.length);
 
-/*
-console.log("Your easy spirit goal is " + shortSpiritArray[shortSpiritRandom].task);
-console.log("Your medium spirit goal is " + medSpiritArray[medSpiritRandom].task);
-console.log("Your hard spirit goal is " + longSpiritArray[longSpiritRandom].task);
-*/
 
 shortSpiritAnswer = shortSpiritArray[shortSpiritRandom].task;
 medSpiritAnswer = medSpiritArray[medSpiritRandom].task;
@@ -366,10 +361,10 @@ $("#family").click(function(){
         
     }
     else if(document.getElementById("midTerm").checked == true){
-        document.getElementById("familyAnswer").value = medFamilyAnswer;
+        document.getElementById("familyAnswer").innerHTML = medFamilyAnswer;
     }
     else if(document.getElementById("longTerm").checked == true){
-        document.getElementById("familyAnswer").value = longFamilyAnswer;
+        document.getElementById("familyAnswer").innerHTML = longFamilyAnswer;
     } 
     
 })
