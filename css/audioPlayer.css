@@ -4,9 +4,15 @@
 
 #playlist li a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 #playlist .current-song a {
-    color: blue;
+    color: orange;
+}
+
+#musicPlayer {
+    border-radius: 25px;
+    background: steelblue;
+    border-style: outset;
 }
