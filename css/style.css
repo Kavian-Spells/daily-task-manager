@@ -28,44 +28,9 @@ textarea{
     width: 50%;
     justify-items: center;
     align-items: center;
+    background-color: steelblue;
 
 }
-
-#familyAnswer{
-    width: 100%;
-    height: 75%
-}
-
-#spiritualAnswer{
-    width: 100%;
-    height: 75%
-}
-
-#financialAnswer{
-    width: 100%;
-    height: 75%
-}
-
-#fitnessAnswer{
-    width: 100%;
-    height: 75%
-}
-
-#careerAnswer{
-    width: 100%;
-    height: 75%
-}
-
-#educationAnswer{
-    width: 100%;
-    height: 75%
-}
-
-#socialAnswer{
-    width: 100%;
-    height: 75%
-}
-
 
 #answerContainer{
     display: flex;
@@ -187,6 +152,7 @@ h3 {
     height: 50px;
     width: 100px;
     cursor: pointer;
+    background-color: white;
 }
 
 #family:hover{
@@ -200,6 +166,7 @@ h3 {
     height: 50px;
     width: 100px;
     cursor: pointer;
+    background-color: white;
 }
 
 #spiritual:hover {
@@ -213,6 +180,7 @@ h3 {
     height: 50px;
     width: 100px;
     cursor: pointer;
+    background-color: white;
 }
 
 #financial:hover {
@@ -226,6 +194,7 @@ h3 {
     height: 50px;
     width: 100px;
     cursor: pointer;
+    background-color: white;
 }
 
 #fitness:hover {
@@ -239,6 +208,7 @@ h3 {
     height: 50px;
     width: 100px;
     cursor: pointer;
+    background-color: white;
 }
 
 #career:hover {
@@ -252,6 +222,7 @@ h3 {
     height: 50px;
     width: 100px;
     cursor: pointer;
+    background-color: white;
 }
 
 #education:hover {
@@ -266,6 +237,7 @@ h3 {
     height: 50px;
     width: 100px;
     cursor: pointer;
+    background-color: white;
 }
 
 #social:hover {
@@ -306,41 +278,41 @@ h3 {
 #familyAnswer {
     height: 43px;
     width: 480px;
-    background-color: white;
+    background-color: gainsboro;
 }
 
 #spiritualAnswer {
     height: 43px;
     width: 480px;
-    background-color: white;
+    background-color: gainsboro;
 }
 
 #financialAnswer{
     height: 43px;
     width: 480px;
-    background-color: white;
+    background-color: gainsboro;
 }
 
 #fitnessAnswer {
     height: 43px;
     width: 480px;
-    background-color: white;
+    background-color: gainsboro;
 }
 
 #careerAnswer {
     height: 43px;
     width: 480px;
-    background-color: white;
+    background-color: gainsboro;
 }
 
 #educationAnswer {
     height: 43px;
     width: 480px;
-    background-color: white;
+    background-color: gainsboro;
 }
 
 #socialAnswer {
     height: 43px;
     width: 480px;
-    background-color: white;
+    background-color: gainsboro;
 }
