@@ -1,6 +1,6 @@
 audioPlayer();
 function audioPlayer() {
-    var currentSong = Math.floor(Math.random()*3);
+    var currentSong = Math.floor(Math.random()*6);
     $('#audioPlayer')[0].src = $('#playlist li a')[currentSong];
     $('#audioPlayer')[0].play();
     $(`#${currentSong}`).addClass("current-song");
