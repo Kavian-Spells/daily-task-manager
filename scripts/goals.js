@@ -278,6 +278,50 @@ var medFinancialArray = [medFinancial1, medFinancial2, medFinancial3, medFinanci
 var longFinancialArray = [longFinancial1, longFinancial2, longFinancial3, longFinancial4];
 var randomFinancialArray = [shortFinancial1, shortFinancial2, shortFinancial3, shortFinancial4, medFinancial1, medFinancial2, medFinancial3, medFinancial4, longFinancial1, longFinancial2, longFinancial3, longFinancial4]
 
+// tip library
+var familyTipOne = "Your family loves you and wants to hear from you.";
+var familyTipTwo = "Make sure to let your loved ones know how you're doing.";
+var familyTipThree = "Now try to make family contact a regular activity!";
+var familyTipArray = [familyTipOne, familyTipTwo, familyTipThree];
+
+var spiritTipOne = "Find a space of solitude and make that your place of spiritual self-discussion.";
+var spiritTipTwo = "If you're having spiritual troubles, find a trusted advisor and ask for guidance.";
+var spiritTipThree = "This can be a tool for mental rest and personal calmness.";
+var spiritTipArray = [spiritTipOne, spiritTipTwo, spiritTipTwo];
+
+var financialTipOne = "Money doesn't buy happiness, but c'mon, it sure does help.";
+var financialTipTwo = "Retirement is best enjoyed without debt and financial stress.";
+var financialTiThree = "Saving loose change can amount to enough vacation money for when you really need one.";
+var financialTipArray = [financialTipOne, financialTipTwo, financialTiThree]
+
+var fitnessTipOne = "Drink water and make sure you eat enough.";
+var fitnessTipTwo = "Take rest days to heal your body.";
+var fitnessTipThree = "Be sure to stick to an exercise regiment that best works for you.";
+var fitnessTipArray = [fitnessTipOne, fitnessTipTwo, fitnessTipThree];
+
+var careerTipOne = "If nobody will pay you to do what you like doing, then get paid for doing something that you're good at.";
+var careerTipTwo = "Healthy habits correlate to a healthy career.";
+var careerTipThree = "Your career is just as important as your ideal livlihood outside of the workplace, always take time to balance them both.";
+var careerTipArray = [careerTipOne, careerTipTwo, careerTipThree];
+
+var educationTipOne = "Always chase learning outside of the ordiance.";
+var educationTipTwo = "Eating good foods before a study session have positive affects on cognition and comprehension.";
+var educationTipThree = "Studying a little everyday typically results in better academic perfomance compared to an overloaded single study session.";
+var educationTipArray = [educationTipOne, educationTipTwo, educationTipThree];
+
+var socialTipOne = "If it will help; take small and deliberate steps toward overcoming social anxities.";
+var socialTipTwo = "Spending time with people you get along with is just as important as spending time alone.";
+var socialTipThree = "Being happy with yourself makes it easier to enjoy senarios that you normally avoid.";
+var socialTipArray = [socialTipOne, socialTipTwo, socialTipThree];
+
+// to call random tips to relevant category
+const randomSocialTip = Math.floor(Math.random() * socialTipArray.length);
+const randomEducationTip = Math.floor(Math.random() * educationTipArray.length);
+const randomFamilyTip = Math.floor(Math.random() * familyTipArray.length);
+const randomFitnessTip = Math.floor(Math.random() * fitnessTipArray.length);
+const randomCareerTip = Math.floor(Math.random() * careerTipArray.length);
+const randomSpiritTip = Math.floor(Math.random() * spiritTipArray.length);
+const randomFinancialTip = Math.floor(Math.random() * financialTipArray.length);
 
 //Use below to call to inner HTML
 const shortSpiritRandom = Math.floor(Math.random() * shortSpiritArray.length);
@@ -325,36 +369,43 @@ shortSpiritAnswer = shortSpiritArray[shortSpiritRandom].task;
 medSpiritAnswer = medSpiritArray[medSpiritRandom].task;
 longSpiritAnswer = longSpiritArray[longSpiritRandom].task;
 rouletteSpiritAnswer = randomSpiritArray[randomSpirit].task;
+spiritTipBox = spiritTipArray[randomSpiritTip];
 
 shortFitnessAnswer = shortFitnessArray[shortFitnessRandom].task;
 medFitnessAnswer = medFitnessArray[medFitnessRandom].task;
 longFitnessAnswer = longFitnessArray[longFitnessRandom].task;
 rouletteFitnessAnswer = randomFitnessArray[randomFitness].task;
+fitnessTipBox = fitnessTipArray[randomFitnessTip];
 
 shortEducationalAnswer = shortEducationalArray[shortEducationalRandom].task;
 medEducationalAnswer = medEducationalArray[medEducationalRandom].task;
 longEducationalAnswer = longEducationalArray[longEducationalRandom].task;
 rouletteEducationalAnswer = randomEducationArray[randomEducation].task;
+educationTipBox = educationTipArray[randomEducationTip];
 
 shortFamilyAnswer = shortFamilyArray[shortFamilyRandom].task;
 medFamilyAnswer = medFamilyArray[medFamilyRandom].task;
 longFamilyAnswer = longFamilyArray[longFamilyRandom].task;
 rouletteFamilyAnswer = randomFamilyArray[randomFamily].task;
+familyTipBox = familyTipArray[randomFamilyTip];
 
 shortCareerAnswer = shortCareerArray[shortCareerRandom].task;
 medCareerAnswer = medCareerArray[medCareerRandom].task;
 longCareerAnswer = longCareerArray[longCareerRandom].task;
 rouletteCareerAnswer = randomCareerArray[randomCareer].task;
+careerTipBox = careerTipArray[randomCareerTip];
 
 shortSocialAnswer = shortSocialArray[shortSocialRandom].task;
 medSocialAnswer = medSocialArray[medSocialRandom].task;
 longSocialAnswer = longSocialArray[longSocialRandom].task;
 rouletteSocialAnswer = randomSocialArray[randomSocial].task;
+socialTipBox = socialTipArray[randomSocialTip];
 
 shortFinancialAnswer = shortFinancialArray[shortFinancialRandom].task;
 medFinancialAnswer = medFinancialArray[medFinancialRandom].task;
 longFinancialAnswer = longFinancialArray[longFinancialRandom].task;
 rouletteFinancialAnswer = randomFinancialArray[randomFinancial].task;
+financialTipBox = financialTipArray[randomFinancialTip];
 
 
 
@@ -363,13 +414,16 @@ rouletteFinancialAnswer = randomFinancialArray[randomFinancial].task;
 $("#family").click(function(){
     if(document.getElementById("shortTerm").checked == true){
         document.getElementById("familyAnswer").innerHTML = shortFamilyAnswer;
+        document.getElementById("tipBox").innerHTML = familyTipBox;
         
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("familyAnswer").value = medFamilyAnswer;
+        document.getElementById("tipBox").innerHTML = familyTipBox;
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("familyAnswer").value = longFamilyAnswer;
+        document.getElementById("tipBox").innerHTML = familyTipBox;
     } 
     
 })
@@ -377,72 +431,90 @@ $("#family").click(function(){
 $("#spiritual").click(function(){
     if(document.getElementById("shortTerm").checked == true){
         document.getElementById("spiritualAnswer").innerHTML = shortSpiritAnswer;
+        document.getElementById("tipBox").innerHTML = spiritTipBox;
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("spiritualAnswer").innerHTML = medSpiritAnswer;
+        document.getElementById("tipBox").innerHTML = spiritTipBox;
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("spiritualAnswer").innerHTML = longSpiritAnswer;
+        document.getElementById("tipBox").innerHTML = spiritTipBox;
     } 
 })
 
 $("#financial").click(function(){
     if(document.getElementById("shortTerm").checked == true){
         document.getElementById("financialAnswer").innerHTML = shortFinancialAnswer;
+        document.getElementById("tipBox").innerHTML = financialTipBox;
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("financialAnswer").innerHTML = medFinancialAnswer;
+        document.getElementById("tipBox").innerHTML = financialTipBox;
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("financialAnswer").innerHTML = longFinancialAnswer;
+        document.getElementById("tipBox").innerHTML = financialTipBox;
     } 
 })
 
 $("#fitness").click(function(){
     if(document.getElementById("shortTerm").checked == true){
         document.getElementById("fitnessAnswer").innerHTML = shortFitnessAnswer;
+        document.getElementById("tipBox").innerHTML = fitnessTipBox;
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("fitnessAnswer").innerHTML = medFitnessAnswer;
+        document.getElementById("tipBox").innerHTML = fitnessTipBox;
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("fitnessAnswer").innerHTML = longFitnessAnswer;
+        document.getElementById("tipBox").innerHTML = fitnessTipBox;
     } 
 })
 
 $("#career").click(function(){
     if(document.getElementById("shortTerm").checked == true){
         document.getElementById("careerAnswer").innerHTML = shortCareerAnswer;
+        document.getElementById("tipBox").innerHTML = careerTipBox;
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("careerAnswer").innerHTML = medCareerAnswer;
+        document.getElementById("tipBox").innerHTML = careerTipBox;
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("careerAnswer").innerHTML = longCareerAnswer;
+        document.getElementById("tipBox").innerHTML = careerTipBox;
     } 
 })
 
 $("#education").click(function(){
     if(document.getElementById("shortTerm").checked == true){
         document.getElementById("educationAnswer").innerHTML = shortEducationalAnswer;
+        document.getElementById("tipBox").innerHTML = educationTipBox;
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("educationAnswer").innerHTML = medEducationalAnswer;
+        document.getElementById("tipBox").innerHTML = educationTipBox;
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("educationAnswer").innerHTML = longEducationalAnswer;
+        document.getElementById("tipBox").innerHTML = educationTipBox;
     } 
 })
 
 $("#social").click(function(){
     if(document.getElementById("shortTerm").checked == true){
         document.getElementById("socialAnswer").innerHTML = shortSocialAnswer;
+        document.getElementById("tipBox").innerHTML = socialTipBox;
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("socialAnswer").innerHTML = medSocialAnswer;
+        document.getElementById("tipBox").innerHTML = socialTipBox;
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("socialAnswer").innerHTML = longSocialAnswer;
+        document.getElementById("tipBox").innerHTML = socialTipBox;
     } 
 })
 

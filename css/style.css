@@ -136,6 +136,15 @@ h3 {
     text-align: center;
 }
 
+#tipBox{
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: slategray;
+    font-size: large;
+}
+
 
 #task {
     
