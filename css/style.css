@@ -189,11 +189,23 @@ h3 {
     cursor: pointer;
 }
 
+#family:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
 #spiritual {
     font-size: large;
     height: 50px;
     width: 100px;
     cursor: pointer;
+}
+
+#spiritual:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
 }
 
 #financial {
@@ -203,11 +215,23 @@ h3 {
     cursor: pointer;
 }
 
+#financial:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
 #fitness {
     font-size: large;
     height: 50px;
     width: 100px;
     cursor: pointer;
+}
+
+#fitness:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
 }
 
 #career {
@@ -217,11 +241,23 @@ h3 {
     cursor: pointer;
 }
 
+#career:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
 #education {
     font-size: large;
     height: 50px;
     width: 100px;
     cursor: pointer;
+}
+
+#education:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
 }
 
 
@@ -232,12 +268,19 @@ h3 {
     cursor: pointer;
 }
 
+#social:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
 #roulette {
     font-size: large;
     height: 50px;
     width: 100px;
     cursor: pointer;
 }
+
 
 #short-term {
     font-size: large;
