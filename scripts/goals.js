@@ -362,7 +362,7 @@ rouletteFinancialAnswer = randomFinancialArray[randomFinancial].task;
 
 $("#family").click(function(){
     if(document.getElementById("shortTerm").checked == true){
-        document.getElementById("familyAnswer").value = shortFamilyAnswer;
+        document.getElementById("familyAnswer").innerHTML = shortFamilyAnswer;
         
     }
     else if(document.getElementById("midTerm").checked == true){
@@ -376,82 +376,82 @@ $("#family").click(function(){
 
 $("#spiritual").click(function(){
     if(document.getElementById("shortTerm").checked == true){
-        document.getElementById("spiritualAnswer").value = shortSpiritAnswer;
+        document.getElementById("spiritualAnswer").innerHTML = shortSpiritAnswer;
     }
     else if(document.getElementById("midTerm").checked == true){
-        document.getElementById("spiritualAnswer").value = medSpiritAnswer;
+        document.getElementById("spiritualAnswer").innerHTML = medSpiritAnswer;
     }
     else if(document.getElementById("longTerm").checked == true){
-        document.getElementById("spiritualAnswer").value = longSpiritAnswer;
+        document.getElementById("spiritualAnswer").innerHTML = longSpiritAnswer;
     } 
 })
 
 $("#financial").click(function(){
     if(document.getElementById("shortTerm").checked == true){
-        document.getElementById("financialAnswer").value = shortFinancialAnswer;
+        document.getElementById("financialAnswer").innerHTML = shortFinancialAnswer;
     }
     else if(document.getElementById("midTerm").checked == true){
-        document.getElementById("financialAnswer").value = medFinancialAnswer;
+        document.getElementById("financialAnswer").innerHTML = medFinancialAnswer;
     }
     else if(document.getElementById("longTerm").checked == true){
-        document.getElementById("financialAnswer").value = longFinancialAnswer;
+        document.getElementById("financialAnswer").innerHTML = longFinancialAnswer;
     } 
 })
 
 $("#fitness").click(function(){
     if(document.getElementById("shortTerm").checked == true){
-        document.getElementById("fitnessAnswer").value = shortFitnessAnswer;
+        document.getElementById("fitnessAnswer").innerHTML = shortFitnessAnswer;
     }
     else if(document.getElementById("midTerm").checked == true){
-        document.getElementById("fitnessAnswer").value = medFitnessAnswer;
+        document.getElementById("fitnessAnswer").innerHTML = medFitnessAnswer;
     }
     else if(document.getElementById("longTerm").checked == true){
-        document.getElementById("fitnessAnswer").value = longFitnessAnswer;
+        document.getElementById("fitnessAnswer").innerHTML = longFitnessAnswer;
     } 
 })
 
 $("#career").click(function(){
     if(document.getElementById("shortTerm").checked == true){
-        document.getElementById("careerAnswer").value = shortCareerAnswer;
+        document.getElementById("careerAnswer").innerHTML = shortCareerAnswer;
     }
     else if(document.getElementById("midTerm").checked == true){
-        document.getElementById("careerAnswer").value = medCareerAnswer;
+        document.getElementById("careerAnswer").innerHTML = medCareerAnswer;
     }
     else if(document.getElementById("longTerm").checked == true){
-        document.getElementById("careerAnswer").value = longCareerAnswer;
+        document.getElementById("careerAnswer").innerHTML = longCareerAnswer;
     } 
 })
 
 $("#education").click(function(){
     if(document.getElementById("shortTerm").checked == true){
-        document.getElementById("educationAnswer").value = shortEducationalAnswer;
+        document.getElementById("educationAnswer").innerHTML = shortEducationalAnswer;
     }
     else if(document.getElementById("midTerm").checked == true){
-        document.getElementById("educationAnswer").value = medEducationalAnswer;
+        document.getElementById("educationAnswer").innerHTML = medEducationalAnswer;
     }
     else if(document.getElementById("longTerm").checked == true){
-        document.getElementById("educationAnswer").value = longEducationalAnswer;
+        document.getElementById("educationAnswer").innerHTML = longEducationalAnswer;
     } 
 })
 
 $("#social").click(function(){
     if(document.getElementById("shortTerm").checked == true){
-        document.getElementById("socialAnswer").value = shortSocialAnswer;
+        document.getElementById("socialAnswer").innerHTML = shortSocialAnswer;
     }
     else if(document.getElementById("midTerm").checked == true){
-        document.getElementById("socialAnswer").value = medSocialAnswer;
+        document.getElementById("socialAnswer").innerHTML = medSocialAnswer;
     }
     else if(document.getElementById("longTerm").checked == true){
-        document.getElementById("socialAnswer").value = longSocialAnswer;
+        document.getElementById("socialAnswer").innerHTML = longSocialAnswer;
     } 
 })
 
 $("#rouletteButton").click(() => {
-    document.getElementById("familyAnswer").value = rouletteFamilyAnswer;
-    document.getElementById("spiritualAnswer").value = rouletteSpiritAnswer;
-    document.getElementById("financialAnswer").value = rouletteFinancialAnswer;
-    document.getElementById("fitnessAnswer").value = rouletteFitnessAnswer;
-    document.getElementById("careerAnswer").value = rouletteCareerAnswer;
-    document.getElementById("educationAnswer").value = rouletteEducationalAnswer;
-    document.getElementById("socialAnswer").value = rouletteSocialAnswer;
+    document.getElementById("familyAnswer").innerHTML = rouletteFamilyAnswer;
+    document.getElementById("spiritualAnswer").innerHTML = rouletteSpiritAnswer;
+    document.getElementById("financialAnswer").innerHTML = rouletteFinancialAnswer;
+    document.getElementById("fitnessAnswer").innerHTML = rouletteFitnessAnswer;
+    document.getElementById("careerAnswer").innerHTML = rouletteCareerAnswer;
+    document.getElementById("educationAnswer").innerHTML = rouletteEducationalAnswer;
+    document.getElementById("socialAnswer").innerHTML = rouletteSocialAnswer;
 })

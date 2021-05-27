@@ -302,3 +302,45 @@ h3 {
     width: 100px;
     cursor: pointer;
 }
+
+#familyAnswer {
+    height: 43px;
+    width: 480px;
+    background-color: white;
+}
+
+#spiritualAnswer {
+    height: 43px;
+    width: 480px;
+    background-color: white;
+}
+
+#financialAnswer{
+    height: 43px;
+    width: 480px;
+    background-color: white;
+}
+
+#fitnessAnswer {
+    height: 43px;
+    width: 480px;
+    background-color: white;
+}
+
+#careerAnswer {
+    height: 43px;
+    width: 480px;
+    background-color: white;
+}
+
+#educationAnswer {
+    height: 43px;
+    width: 480px;
+    background-color: white;
+}
+
+#socialAnswer {
+    height: 43px;
+    width: 480px;
+    background-color: white;
+}
