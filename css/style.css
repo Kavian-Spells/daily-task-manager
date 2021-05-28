@@ -23,13 +23,13 @@ textarea{
 
 #taskBox{
     display: grid;
-    grid-template-columns: 33% 66%;
-    border: solid;
-    width: 50%;
-    justify-items: center;
+    grid-template-columns: 20% 80%;
+    width: 60%;
+    justify-items: flex-start;
     align-items: center;
     background-color: steelblue;
-
+    flex-basis: 70%;
+    border-style: outset;
 }
 
 #answerContainer{
@@ -101,17 +101,17 @@ h3 {
 
 
 #container {
-    padding: 0;
+    padding: 200px;
     margin: 0;
-    width: 66%;
-    height: 70vh;
+    width: 70%;
+    height: 90vh;
     display: grid;
     margin-left: auto;
     margin-right: auto;
     justify-items: center;
-    align-content: center;
+    align-content: space-evenly;
     align-items: center;
-    border-style: groove;
+    border-style: outset;
     background-color: slategrey;
     
 }
@@ -129,6 +129,7 @@ h3 {
     justify-items: center;
     align-content: center;
     align-items: center;
+    border-style: outset;
 }
 
 #header {
@@ -162,6 +163,9 @@ h3 {
     width: 100px;
     cursor: pointer;
     background-color: white;
+    color: steelblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
 }
 
 #family:hover{
@@ -176,6 +180,9 @@ h3 {
     width: 100px;
     cursor: pointer;
     background-color: white;
+    color: steelblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
 }
 
 #spiritual:hover {
@@ -190,6 +197,9 @@ h3 {
     width: 100px;
     cursor: pointer;
     background-color: white;
+    color: steelblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
 }
 
 #financial:hover {
@@ -204,6 +214,9 @@ h3 {
     width: 100px;
     cursor: pointer;
     background-color: white;
+    color: steelblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
 }
 
 #fitness:hover {
@@ -218,6 +231,9 @@ h3 {
     width: 100px;
     cursor: pointer;
     background-color: white;
+    color: steelblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
 }
 
 #career:hover {
@@ -232,6 +248,9 @@ h3 {
     width: 100px;
     cursor: pointer;
     background-color: white;
+    color: steelblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
 }
 
 #education:hover {
@@ -247,6 +266,9 @@ h3 {
     width: 100px;
     cursor: pointer;
     background-color: white;
+    color: steelblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
 }
 
 #social:hover {
@@ -260,6 +282,7 @@ h3 {
     height: 50px;
     width: 100px;
     cursor: pointer;
+    
 }
 
 
@@ -286,42 +309,87 @@ h3 {
 
 #familyAnswer {
     height: 43px;
-    width: 480px;
+    width: 400px;
     background-color: gainsboro;
+    border-style: outset;
+
 }
 
 #spiritualAnswer {
     height: 43px;
-    width: 480px;
+    width: 400px;
     background-color: gainsboro;
+    border-style: outset;
+
 }
 
 #financialAnswer{
     height: 43px;
-    width: 480px;
+    width: 400px;
     background-color: gainsboro;
+    border-style: outset;
+
 }
 
 #fitnessAnswer {
     height: 43px;
-    width: 480px;
+    width: 400px;
     background-color: gainsboro;
+    border-style: outset;
+
 }
 
 #careerAnswer {
     height: 43px;
-    width: 480px;
+    width: 400px;
     background-color: gainsboro;
+    border-style: outset;
+
 }
 
 #educationAnswer {
     height: 43px;
-    width: 480px;
+    width: 400px;
     background-color: gainsboro;
+    border-style: outset;
+
 }
 
 #socialAnswer {
     height: 43px;
-    width: 480px;
+    width: 400px;
     background-color: gainsboro;
+    border-style: outset;
 }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  #threat {
+      color: white;
+  }
