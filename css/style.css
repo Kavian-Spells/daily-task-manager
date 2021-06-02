@@ -1,5 +1,8 @@
 body{
     background-image: url("https://image.freepik.com/free-vector/calm-mountain-forest-wild-nature-scene-landscape-monochrome-illustration_7081-1822.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
    
 
