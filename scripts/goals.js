@@ -117,9 +117,14 @@ class Quotes {
     }
 }
 
+function windowLoadMessage() {
+    document.getElementById("tipBox").innerHTML = "You Got This!!"
+}
+
 let apiQuotes = new Quotes
 apiQuotes.fetchApi();
 apiQuotes.displayQuote();
+windowLoadMessage();
 
 //example of how to call an object class = highCareer1.shortTerm();
 
