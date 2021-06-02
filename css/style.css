@@ -30,6 +30,8 @@ textarea{
     background-color: steelblue;
     flex-basis: 70%;
     border-style: outset;
+    font-size: 20px;
+    
 }
 
 #answerContainer{
@@ -143,7 +145,7 @@ h3 {
     justify-content: center;
     align-content: center;
     background-color: slategray;
-    font-size: large;
+    font-size: 30px;
 }
 
 
@@ -271,6 +273,17 @@ h3 {
     font-weight: bold;
 }
 
+#rouletteBox{
+    font-size: large;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    background-color: white;
+    color: steelblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
 #social:hover {
     background-color: black;
     color: white;
@@ -356,6 +369,13 @@ h3 {
 }
 
 #socialAnswer {
+    height: 43px;
+    width: 400px;
+    background-color: gainsboro;
+    border-style: outset;
+}
+
+#rouletteBoxAnswer {
     height: 43px;
     width: 400px;
     background-color: gainsboro;

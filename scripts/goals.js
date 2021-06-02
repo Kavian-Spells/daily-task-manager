@@ -314,6 +314,11 @@ var socialTipTwo = "Spending time with people you get along with is just as impo
 var socialTipThree = "Being happy with yourself makes it easier to enjoy senarios that you normally avoid.";
 var socialTipArray = [socialTipOne, socialTipTwo, socialTipThree];
 
+var rouletteTipOne = "Believe in yourself and you can accomplish anything...within reason!";
+var rouletteTipTwo = "Meditation and self-reflection are good practices before taking on a task.";
+var rouletteTipThree = "Don't forget to feel proud of yourself upon task completion!";
+var rouletteTipArray = [rouletteTipOne, rouletteTipTwo, rouletteTipThree];
+
 // to call random tips to relevant category
 const randomSocialTip = Math.floor(Math.random() * socialTipArray.length);
 const randomEducationTip = Math.floor(Math.random() * educationTipArray.length);
@@ -322,6 +327,7 @@ const randomFitnessTip = Math.floor(Math.random() * fitnessTipArray.length);
 const randomCareerTip = Math.floor(Math.random() * careerTipArray.length);
 const randomSpiritTip = Math.floor(Math.random() * spiritTipArray.length);
 const randomFinancialTip = Math.floor(Math.random() * financialTipArray.length);
+const randomRouletteTip = Math.floor(Math.random() * rouletteTipArray.length)
 
 //Use below to call to inner HTML
 const shortSpiritRandom = Math.floor(Math.random() * shortSpiritArray.length);
@@ -358,6 +364,9 @@ const shortFinancialRandom = Math.floor(Math.random() * shortFinancialArray.leng
 const medFinancialRandom = Math.floor(Math.random() * medFinancialArray.length);
 const longFinancialRandom = Math.floor(Math.random() * longFinancialArray.length);
 const randomFinancial = Math.floor(Math.random() * randomFinancialArray.length);
+
+
+
 
 
 shortSpiritAnswer = shortSpiritArray[shortSpiritRandom].task;
@@ -402,6 +411,11 @@ longFinancialAnswer = longFinancialArray[longFinancialRandom].task;
 rouletteFinancialAnswer = randomFinancialArray[randomFinancial].task;
 financialTipBox = financialTipArray[randomFinancialTip];
 
+var rouletteArray = [rouletteSpiritAnswer, rouletteCareerAnswer, rouletteEducationalAnswer, rouletteFamilyAnswer, rouletteFinancialAnswer, rouletteFitnessAnswer, rouletteSocialAnswer]
+const rouletteRandomAnswer = Math.floor(Math.random() * rouletteArray.length)
+roulette = rouletteArray[rouletteRandomAnswer]
+rouletteTipBox = rouletteTipArray[randomRouletteTip]
+
 
 
 
@@ -410,15 +424,57 @@ $("#family").click(function(){
     if(document.getElementById("shortTerm").checked == true){
         document.getElementById("familyAnswer").innerHTML = shortFamilyAnswer;
         document.getElementById("tipBox").innerHTML = familyTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
         
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("familyAnswer").value = medFamilyAnswer;
         document.getElementById("tipBox").innerHTML = familyTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("familyAnswer").value = longFamilyAnswer;
         document.getElementById("tipBox").innerHTML = familyTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     } 
     
 })
@@ -427,14 +483,56 @@ $("#spiritual").click(function(){
     if(document.getElementById("shortTerm").checked == true){
         document.getElementById("spiritualAnswer").innerHTML = shortSpiritAnswer;
         document.getElementById("tipBox").innerHTML = spiritTipBox;
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("spiritualAnswer").innerHTML = medSpiritAnswer;
         document.getElementById("tipBox").innerHTML = spiritTipBox;
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("spiritualAnswer").innerHTML = longSpiritAnswer;
         document.getElementById("tipBox").innerHTML = spiritTipBox;
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     } 
 })
 
@@ -442,14 +540,56 @@ $("#financial").click(function(){
     if(document.getElementById("shortTerm").checked == true){
         document.getElementById("financialAnswer").innerHTML = shortFinancialAnswer;
         document.getElementById("tipBox").innerHTML = financialTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("financialAnswer").innerHTML = medFinancialAnswer;
         document.getElementById("tipBox").innerHTML = financialTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("financialAnswer").innerHTML = longFinancialAnswer;
         document.getElementById("tipBox").innerHTML = financialTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     } 
 })
 
@@ -457,14 +597,56 @@ $("#fitness").click(function(){
     if(document.getElementById("shortTerm").checked == true){
         document.getElementById("fitnessAnswer").innerHTML = shortFitnessAnswer;
         document.getElementById("tipBox").innerHTML = fitnessTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("fitnessAnswer").innerHTML = medFitnessAnswer;
         document.getElementById("tipBox").innerHTML = fitnessTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("fitnessAnswer").innerHTML = longFitnessAnswer;
         document.getElementById("tipBox").innerHTML = fitnessTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     } 
 })
 
@@ -472,14 +654,56 @@ $("#career").click(function(){
     if(document.getElementById("shortTerm").checked == true){
         document.getElementById("careerAnswer").innerHTML = shortCareerAnswer;
         document.getElementById("tipBox").innerHTML = careerTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("careerAnswer").innerHTML = medCareerAnswer;
         document.getElementById("tipBox").innerHTML = careerTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("careerAnswer").innerHTML = longCareerAnswer;
         document.getElementById("tipBox").innerHTML = careerTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     } 
 })
 
@@ -487,14 +711,56 @@ $("#education").click(function(){
     if(document.getElementById("shortTerm").checked == true){
         document.getElementById("educationAnswer").innerHTML = shortEducationalAnswer;
         document.getElementById("tipBox").innerHTML = educationTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("educationAnswer").innerHTML = medEducationalAnswer;
         document.getElementById("tipBox").innerHTML = educationTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("educationAnswer").innerHTML = longEducationalAnswer;
         document.getElementById("tipBox").innerHTML = educationTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("social").remove();
+        document.getElementById("socialAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     } 
 })
 
@@ -502,23 +768,74 @@ $("#social").click(function(){
     if(document.getElementById("shortTerm").checked == true){
         document.getElementById("socialAnswer").innerHTML = shortSocialAnswer;
         document.getElementById("tipBox").innerHTML = socialTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("socialAnswer").innerHTML = medSocialAnswer;
         document.getElementById("tipBox").innerHTML = socialTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("socialAnswer").innerHTML = longSocialAnswer;
         document.getElementById("tipBox").innerHTML = socialTipBox;
+        document.getElementById("spiritual").remove();
+        document.getElementById("spiritualAnswer").remove();
+        document.getElementById("financial").remove();
+        document.getElementById("financialAnswer").remove();
+        document.getElementById("fitness").remove();
+        document.getElementById("fitnessAnswer").remove();
+        document.getElementById("career").remove();
+        document.getElementById("careerAnswer").remove();
+        document.getElementById("education").remove();
+        document.getElementById("educationAnswer").remove();
+        document.getElementById("family").remove();
+        document.getElementById("familyAnswer").remove();
+        document.getElementById("rouletteBox").remove();
+        document.getElementById("rouletteBoxAnswer").remove();
     } 
 })
 
 $("#rouletteButton").click(() => {
-    document.getElementById("familyAnswer").innerHTML = rouletteFamilyAnswer;
-    document.getElementById("spiritualAnswer").innerHTML = rouletteSpiritAnswer;
-    document.getElementById("financialAnswer").innerHTML = rouletteFinancialAnswer;
-    document.getElementById("fitnessAnswer").innerHTML = rouletteFitnessAnswer;
-    document.getElementById("careerAnswer").innerHTML = rouletteCareerAnswer;
-    document.getElementById("educationAnswer").innerHTML = rouletteEducationalAnswer;
-    document.getElementById("socialAnswer").innerHTML = rouletteSocialAnswer;
+    document.getElementById("rouletteBoxAnswer").innerHTML = roulette;
+    document.getElementById("tipBox").innerHTML = rouletteTipBox;
+    document.getElementById("spiritual").remove();
+    document.getElementById("spiritualAnswer").remove();
+    document.getElementById("financial").remove();
+    document.getElementById("financialAnswer").remove();
+    document.getElementById("fitness").remove();
+    document.getElementById("fitnessAnswer").remove();
+    document.getElementById("career").remove();
+    document.getElementById("careerAnswer").remove();
+    document.getElementById("education").remove();
+    document.getElementById("educationAnswer").remove();
+    document.getElementById("social").remove();
+    document.getElementById("socialAnswer").remove();
+    document.getElementById("family").remove();
+    document.getElementById("familyAnswer").remove();
 })
