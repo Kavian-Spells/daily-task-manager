@@ -282,6 +282,7 @@ h3 {
     color: steelblue;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
+    cursor: not-allowed;
 }
 
 #social:hover {
