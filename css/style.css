@@ -107,10 +107,10 @@ h3 {
 
 
 #container {
-    padding: 200px;
+    padding: 20px;
     margin: 0;
     width: 70%;
-    height: 90vh;
+    height: 100%;
     display: grid;
     margin-left: auto;
     margin-right: auto;
@@ -148,8 +148,10 @@ h3 {
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: slategray;
+    background-color: white;
     font-size: 30px;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -166,7 +168,7 @@ h3 {
 #family {
     font-size: large;
     height: 50px;
-    width: 100px;
+    width: 100%;
     cursor: pointer;
     background-color: white;
     color: steelblue;
@@ -183,7 +185,7 @@ h3 {
 #spiritual {
     font-size: large;
     height: 50px;
-    width: 100px;
+    width: 100%;
     cursor: pointer;
     background-color: white;
     color: steelblue;
@@ -200,7 +202,7 @@ h3 {
 #financial {
     font-size: large;
     height: 50px;
-    width: 100px;
+    width: 100%;
     cursor: pointer;
     background-color: white;
     color: steelblue;
@@ -217,7 +219,7 @@ h3 {
 #fitness {
     font-size: large;
     height: 50px;
-    width: 100px;
+    width: 100%;
     cursor: pointer;
     background-color: white;
     color: steelblue;
@@ -234,7 +236,7 @@ h3 {
 #career {
     font-size: large;
     height: 50px;
-    width: 100px;
+    width: 100%;
     cursor: pointer;
     background-color: white;
     color: steelblue;
@@ -251,7 +253,7 @@ h3 {
 #education {
     font-size: large;
     height: 50px;
-    width: 100px;
+    width: 100%;
     cursor: pointer;
     background-color: white;
     color: steelblue;
@@ -269,7 +271,7 @@ h3 {
 #social {
     font-size: large;
     height: 50px;
-    width: 100px;
+    width: 100%;
     cursor: pointer;
     background-color: white;
     color: steelblue;
@@ -280,7 +282,7 @@ h3 {
 #rouletteBox{
     font-size: large;
     height: 50px;
-    width: 100px;
+    width: 100%;
     cursor: pointer;
     background-color: white;
     color: steelblue;
@@ -307,27 +309,27 @@ h3 {
 #short-term {
     font-size: large;
     height: 50px;
-    width: 100px;
+    width: 100%;
     cursor: pointer;
 }
 
 #middle-term {
     font-size: large;
     height: 50px;
-    width: 100px;
+    width: 100%;
     cursor: pointer;
 }
 
 #long-term {
     font-size: large;
     height: 50px;
-    width: 100px;
+    width: 100%;
     cursor: pointer;
 }
 
 #familyAnswer {
     height: 43px;
-    width: 400px;
+    width: 100%;
     background-color: gainsboro;
     border-style: outset;
 
@@ -335,7 +337,7 @@ h3 {
 
 #spiritualAnswer {
     height: 43px;
-    width: 400px;
+    width: 100%;
     background-color: gainsboro;
     border-style: outset;
 
@@ -343,7 +345,7 @@ h3 {
 
 #financialAnswer{
     height: 43px;
-    width: 400px;
+    width: 100%;
     background-color: gainsboro;
     border-style: outset;
 
@@ -351,7 +353,7 @@ h3 {
 
 #fitnessAnswer {
     height: 43px;
-    width: 400px;
+    width: 100%;
     background-color: gainsboro;
     border-style: outset;
 
@@ -359,7 +361,7 @@ h3 {
 
 #careerAnswer {
     height: 43px;
-    width: 400px;
+    width: 100%;
     background-color: gainsboro;
     border-style: outset;
 
@@ -367,7 +369,7 @@ h3 {
 
 #educationAnswer {
     height: 43px;
-    width: 400px;
+    width: 100%;
     background-color: gainsboro;
     border-style: outset;
 
@@ -375,14 +377,14 @@ h3 {
 
 #socialAnswer {
     height: 43px;
-    width: 400px;
+    width: 100%;
     background-color: gainsboro;
     border-style: outset;
 }
 
 #rouletteBoxAnswer {
     height: 43px;
-    width: 400px;
+    width: 100%;
     background-color: gainsboro;
     border-style: outset;
 }
