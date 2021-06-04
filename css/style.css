@@ -28,22 +28,24 @@ textarea{
 #taskBox{
     display: grid;
     grid-template-columns: 20% 80%;
-    width: 60%;
-    justify-items: flex-start;
-    align-items: center;
     background-color: steelblue;
-    flex-basis: 70%;
     border-style: outset;
     font-size: 20px;
-    
+}
+
+.timer-container {
+    display: grid;
+    grid-template-columns: auto;
+    font-size: 20px;
+    background-color: steelblue;
+    border-style: outset;
+    height: 400px;
 }
 
 #answerContainer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: black 1px solid;
 }
 
 
@@ -83,17 +85,17 @@ h3 {
 }
 
 #termHeader {
-    display: flex;
+    display: grid;
     background-color: gainsboro;
     border-style: inherit;
     color: steelblue;
-    justify-content: space-around;
+    width: fit-content;
 }
 
 #choice{
     display: grid;
     height: 150px;
-    width: 98%;
+    width: 100%;
     justify-content: center;
     grid-template-columns: 33% 55%;
     justify-items: flex-start;
