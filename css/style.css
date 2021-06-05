@@ -48,21 +48,15 @@ textarea{
     align-items: center;
     background-color: steelblue;
     font-size: 20px;
-}
-
-.timer-container {
-    display: grid;
-    grid-template-columns: auto;
-    font-size: 20px;
-    background-color: steelblue;
-    border-style: outset;
-    height: 400px;
+    
 }
 
 #answerContainer{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    border: black 1px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
 }
 
 
@@ -106,17 +100,17 @@ h3 {
 }
 
 #termHeader {
-    display: grid;
+    display: flex;
     background-color: gainsboro;
     border-style: inherit;
     color: steelblue;
-    width: fit-content;
+    justify-content: space-around;
 }
 
 #choice{
     display: grid;
     height: 150px;
-    width: 100%;
+    width: 98%;
     justify-content: center;
     grid-template-columns: 33% 55%;
     justify-items: flex-start;
@@ -423,11 +417,13 @@ span {
     width: 50px;
     text-align: center;
     text-decoration: none;
-}
-
-.fa:hover {
+  }
+  
+  .fa:hover {
     opacity: 0.7;
   }
+  
+  
   .fa-facebook {
     background: #3B5998;
     color: white;

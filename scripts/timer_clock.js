@@ -1,85 +1,29 @@
 var sec = 0;
-var sec1 = 0;
-var sec2 = 0;
-var sec3 = 0;
-var sec4 = 0;
-var sec5 = 0;
-var sec6 = 0;
-var sec7 = 0;
-var sec8 = 0;
-
 var min = 0;
-var min1 = 0;
-var min2 = 0;
-var min3 = 0;
-var min4 = 0;
-var min5 = 0;
-var min6 = 0;
-var min7 = 0;
-var min8 = 0;
 
 const str = document.getElementById('shortTerm');
 const mtr = document.getElementById('midTerm');
 const ltr = document.getElementById('longTerm');
 
 var secDisplay = document.getElementById('sec');
-var secDisplay1 = document.getElementById('sec1');
-var secDisplay2 = document.getElementById('sec2');
-var secDisplay3 = document.getElementById('sec3');
-var secDisplay4 = document.getElementById('sec4');
-var secDisplay5 = document.getElementById('sec5');
-var secDisplay6 = document.getElementById('sec6');
-var secDisplay7 = document.getElementById('sec7');
-var secDisplay8 = document.getElementById('sec8');
-
 var minDisplay = document.getElementById('min');
-var minDisplay1 = document.getElementById('min1');
-var minDisplay2 = document.getElementById('min2');
-var minDisplay3 = document.getElementById('min3');
-var minDisplay4 = document.getElementById('min4');
-var minDisplay5 = document.getElementById('min5');
-var minDisplay6 = document.getElementById('min6');
-var minDisplay7 = document.getElementById('min7');
-var minDisplay8 = document.getElementById('min8');
 
-document.querySelector("#rouletteButton").addEventListener('click', start_timer);
-document.querySelector("#family").addEventListener('click', start_timer1);
 document.querySelector("#spiritual").addEventListener('click', start_timer2);
 document.querySelector("#financial").addEventListener('click', start_timer3);
 document.querySelector("#fitness").addEventListener('click', start_timer4);
 document.querySelector("#career").addEventListener('click', start_timer5);
 document.querySelector("#education").addEventListener('click', start_timer6);
 document.querySelector("#social").addEventListener('click', start_timer7);
-document.querySelector("#rouletteButton").addEventListener('click', start_timer8);
-
-
-function timerPrompt() {
-  var text;
-  var question = prompt("Did you learn anything traveler?");
-  switch(question) {
-    case "yes":
-      text = "There is always more to learn, well done! Reload and continue your journey!";
-      break;
-    case "no":
-      text = "Unfortunate, but don't give up! Failure is not the end...unless you choose it to be so. Reload and try again!";
-      break;
-    case "maybe":
-      text = "Sometimes it helps to know what you want to accomplish.You can try again or continue in the fog.";
-      break;
-    default:
-      text = "Is this a game to you?...Well it is in the name.";
-  }
-  alert(text);
-}
-
+document.querySelector("#rouletteButton").addEventListener('click', start_timer);
 
 function start_timer() {
   radio_status();
   
   setInterval(() => {
     if (min == 0 && sec == 0) {
-      timerPrompt();
       return;
+      var question = "Did you learn anything?";
+      var spec = prompt(question);
     }if (sec != 0) {
       sec--;
       if (sec < 10) secDisplay.innerHTML = '0' + sec;
@@ -295,7 +239,6 @@ function start_timer7() {
     }
   }, 1000);
 }
-
 function radio_status7() {
   if (str.checked == true) {
   sec7 = 5;
@@ -303,35 +246,5 @@ function radio_status7() {
     sec7 = 10;
   }else if (ltr.checked == true) {
     sec7 = 15;
-  }
-}
-
-function start_timer8() {
-  radio_status8();
-  sec = 15;
-  
-  setInterval(() => {
-    if (min8 == 0 && sec8 == 0) {
-      return;
-    }if (sec8 != 0) {
-      sec8--;
-      if (sec8 < 10) secDisplay8.innerHTML = '0' + sec8;
-      else secDisplay7.innerHTML = sec7;
-    }else {
-      min7--;
-      if (min7 < 10) minDisplay8.innerHTML = '0' + min8;
-      else minDisplay8.innerHTML = min8;
-      sec7 = 59;
-    }
-  }, 1000);
-}
-
-function radio_status8() {
-  if (str.checked == true) {
-  sec8 = 5;
-  }else if (mtr.checked == true) {
-    sec8 = 10;
-  }else if (ltr.checked == true) {
-    sec8 = 15;
   }
 }

@@ -443,23 +443,6 @@ $("#family").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
-
         
     }
     else if(document.getElementById("midTerm").checked == true){
@@ -479,22 +462,6 @@ $("#family").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("familyAnswer").value = longFamilyAnswer;
@@ -513,22 +480,6 @@ $("#family").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     } 
     
 })
@@ -551,22 +502,6 @@ $("#spiritual").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("spiritualAnswer").innerHTML = medSpiritAnswer;
@@ -585,22 +520,6 @@ $("#spiritual").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("spiritualAnswer").innerHTML = longSpiritAnswer;
@@ -619,22 +538,6 @@ $("#spiritual").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     } 
 })
 
@@ -656,22 +559,6 @@ $("#financial").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("financialAnswer").innerHTML = medFinancialAnswer;
@@ -690,22 +577,6 @@ $("#financial").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("financialAnswer").innerHTML = longFinancialAnswer;
@@ -724,22 +595,6 @@ $("#financial").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     } 
 })
 
@@ -761,22 +616,6 @@ $("#fitness").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("fitnessAnswer").innerHTML = medFitnessAnswer;
@@ -795,22 +634,6 @@ $("#fitness").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("fitnessAnswer").innerHTML = longFitnessAnswer;
@@ -829,22 +652,6 @@ $("#fitness").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     } 
 })
 
@@ -866,22 +673,6 @@ $("#career").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("careerAnswer").innerHTML = medCareerAnswer;
@@ -900,22 +691,6 @@ $("#career").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("careerAnswer").innerHTML = longCareerAnswer;
@@ -934,22 +709,6 @@ $("#career").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     } 
 })
 
@@ -971,22 +730,6 @@ $("#education").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("educationAnswer").innerHTML = medEducationalAnswer;
@@ -1005,22 +748,6 @@ $("#education").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("educationAnswer").innerHTML = longEducationalAnswer;
@@ -1039,22 +766,6 @@ $("#education").click(function(){
         document.getElementById("socialAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec7").remove();
-        document.getElementById("min7").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     } 
 })
 
@@ -1076,22 +787,6 @@ $("#social").click(function(){
         document.getElementById("familyAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     }
     else if(document.getElementById("midTerm").checked == true){
         document.getElementById("socialAnswer").innerHTML = medSocialAnswer;
@@ -1110,22 +805,6 @@ $("#social").click(function(){
         document.getElementById("familyAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     }
     else if(document.getElementById("longTerm").checked == true){
         document.getElementById("socialAnswer").innerHTML = longSocialAnswer;
@@ -1144,22 +823,6 @@ $("#social").click(function(){
         document.getElementById("familyAnswer").remove();
         document.getElementById("rouletteBox").remove();
         document.getElementById("rouletteBoxAnswer").remove();
-        document.getElementById("sec").remove();
-        document.getElementById("min").remove();
-        document.getElementById("sec1").remove();
-        document.getElementById("min1").remove();
-        document.getElementById("sec2").remove();
-        document.getElementById("min2").remove();
-        document.getElementById("sec3").remove();
-        document.getElementById("min3").remove();
-        document.getElementById("sec4").remove();
-        document.getElementById("min4").remove();
-        document.getElementById("sec5").remove();
-        document.getElementById("min5").remove();
-        document.getElementById("sec6").remove();
-        document.getElementById("min6").remove();
-        document.getElementById("sec8").remove();
-        document.getElementById("min8").remove();
     } 
 })
 
@@ -1180,20 +843,4 @@ $("#rouletteButton").click(() => {
     document.getElementById("socialAnswer").remove();
     document.getElementById("family").remove();
     document.getElementById("familyAnswer").remove();
-    document.getElementById("sec1").remove();
-    document.getElementById("min1").remove();
-    document.getElementById("sec2").remove();
-    document.getElementById("min2").remove();
-    document.getElementById("sec3").remove();
-    document.getElementById("min3").remove();
-    document.getElementById("sec4").remove();
-    document.getElementById("min4").remove();
-    document.getElementById("sec5").remove();
-    document.getElementById("min5").remove();
-    document.getElementById("sec6").remove();
-    document.getElementById("min6").remove();
-    document.getElementById("sec7").remove();
-    document.getElementById("min7").remove();
-    document.getElementById("sec8").remove();
-    document.getElementById("min8").remove();
 })
