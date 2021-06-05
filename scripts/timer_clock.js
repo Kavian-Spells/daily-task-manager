@@ -42,6 +42,7 @@ var minDisplay6 = document.getElementById('min6');
 var minDisplay7 = document.getElementById('min7');
 var minDisplay8 = document.getElementById('min8');
 
+document.querySelector("#rouletteButton").addEventListener('click', start_timer);
 document.querySelector("#family").addEventListener('click', start_timer1);
 document.querySelector("#spiritual").addEventListener('click', start_timer2);
 document.querySelector("#financial").addEventListener('click', start_timer3);
@@ -49,16 +50,34 @@ document.querySelector("#fitness").addEventListener('click', start_timer4);
 document.querySelector("#career").addEventListener('click', start_timer5);
 document.querySelector("#education").addEventListener('click', start_timer6);
 document.querySelector("#social").addEventListener('click', start_timer7);
-document.querySelector("#rouletteButton").addEventListener('click', start_timer);
+
+function timerPrompt() {
+  var text;
+  var question = prompt("Did you learn anything traveler?");
+  switch(question) {
+    case "yes":
+      text = "There is always more to learn, well done! Reload and continue your journey!";
+      break;
+    case "no":
+      text = "Unfortunate, but don't give up! Failure is not the end...unless you choose it to be so. Reload and try again!";
+      break;
+    case "maybe":
+      text = "Sometimes it helps to know what you want to accomplish.You can try again or continue in the fog.";
+      break;
+    default:
+      text = "Is this a game to you?...Well it is in the name.";
+  }
+  alert(text);
+}
+
 
 function start_timer() {
   radio_status();
   
   setInterval(() => {
     if (min == 0 && sec == 0) {
+      timerPrompt();
       return;
-      var question = "Did you learn anything?";
-      var spec = prompt(question);
     }if (sec != 0) {
       sec--;
       if (sec < 10) secDisplay.innerHTML = '0' + sec;
