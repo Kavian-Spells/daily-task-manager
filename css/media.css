@@ -1,32 +1,339 @@
+
+/* media query for tablet*/
+@media only screen and (min-width: 720px) and (max-width: 1024px) {
+    body {
+        background-image: url("https://image.freepik.com/free-vector/calm-mountain-forest-wild-nature-scene-landscape-monochrome-illustration_7081-1822.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+    #taskBox{
+        display: grid;
+        grid-template-columns: 20% 0%;
+        width: 60%;
+        justify-items: flex-start;
+        align-items: center;
+        background-color: steelblue;
+        flex-basis: 70%;
+        border-style: outset;
+        font-size: 20px;
+        
+    }
+    #answerContainer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    #rouletteButton{
+        font-size: 50px;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #terms {
+        border-style: outset;
+        height: 225px;
+        width: 65%;
+        background-color: steelblue;
+    }
+    #termHeader {
+        display: flex;
+        background-color: gainsboro;
+        border-style: inherit;
+        color: steelblue;
+        justify-content: space-around;
+    }
+    #choice{
+        display: grid;
+        height: 80px;
+        width: 98%;
+        justify-content: center;
+        grid-template-columns: 33% 55%;
+        justify-items: flex-start;
+        align-items: center;
+        font-size: 23px;
+        font-weight: 550;
+        color: silver;
+    }
+    #container {
+        padding: 200px;
+        margin: 0;
+        width: 70%;
+        height: 90vh;
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+        border-style: outset;
+        background-color: slategrey;
+    }
+    #quotes{
+        text-align: center;
+    }
+    #headerContainer{
+        background: slategrey;
+        width: 66%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        border-style: outset;
+    }
+    #header {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+    }
+    #tipBox{
+        margin-bottom: 3%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: slategray;
+        font-size: 30px;
+    }
+    #task {
+    
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        border-style: solid;
+        border-color: white;
+    }
+    #family {
+        font-size: large;
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+        background-color: white;
+        color: steelblue;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+    #family:hover{
+        background-color: black;
+        color: white;
+        border-color: white;
+    }
+    #spiritual {
+        font-size: large;
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+        background-color: white;
+        color: steelblue;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+    #spiritual:hover {
+        background-color: black;
+        color: white;
+        border-color: white;
+    }
+    #financial {
+        font-size: large;
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+        background-color: white;
+        color: steelblue;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+    #financial:hover {
+        background-color: black;
+        color: white;
+        border-color: white;
+    }
+    #fitness {
+        font-size: large;
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+        background-color: white;
+        color: steelblue;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+    #fitness:hover {
+        background-color: black;
+        color: white;
+        border-color: white;
+    }
+    #career {
+        font-size: large;
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+        background-color: white;
+        color: steelblue;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+    #career:hover {
+        background-color: black;
+        color: white;
+        border-color: white;
+    }
+    #education {
+        font-size: large;
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+        background-color: white;
+        color: steelblue;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+    #education:hover {
+        background-color: black;
+        color: white;
+        border-color: white;
+    }
+    #social {
+        font-size: large;
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+        background-color: white;
+        color: steelblue;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+    #rouletteBox{
+        font-size: large;
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+        background-color: white;
+        color: steelblue;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        cursor: not-allowed;
+    }
+    #social:hover {
+        background-color: black;
+        color: white;
+        border-color: white;
+    }
+    #roulette {
+        font-size: large;
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+        
+    }
+    #short-term {
+        font-size: large;
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+    }
+    #middle-term {
+        font-size: large;
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+    }
+    #long-term {
+        font-size: large;
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+    }
+    #familyAnswer {
+        margin-left: 30px;
+        height: 43px;
+        width: 290px;
+        background-color: gainsboro;
+        border-style: outset;
+    }
+    #spiritualAnswer {
+        margin-left: 30px;
+        height: 43px;
+        width: 290px;
+        background-color: gainsboro;
+        border-style: outset;
+    
+    }
+    #financialAnswer{
+        margin-left: 30px;
+        height: 43px;
+        width: 290px;
+        background-color: gainsboro;
+        border-style: outset;
+    
+    }
+    #fitnessAnswer {
+        margin-left: 30px;
+        height: 43px;
+        width: 290px;
+        background-color: gainsboro;
+        border-style: outset;
+    
+    }
+    #careerAnswer {
+        margin-left: 30px;
+        height: 43px;
+        width: 290px;
+        background-color: gainsboro;
+        border-style: outset;
+    
+    }
+    #educationAnswer {
+        margin-left: 30px;
+        height: 43px;
+        width: 290px;
+        background-color: gainsboro;
+        border-style: outset;
+    
+    }
+    #socialAnswer {
+        margin-left: 30px;
+        height: 43px;
+        width: 290px;
+        background-color: gainsboro;
+        border-style: outset;
+    }
+    #rouletteBoxAnswer {
+        margin-left: 30px;
+        height: 43px;
+        width: 290px;
+        background-color: gainsboro;
+        border-style: outset;
+    }
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+      }
+      .fa:hover {
+        opacity: 0.7;
+      }
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+      #threat {
+        color: white;
+    }
+}
+
+
 /* Smartphones (portrait and landscape) ---------- */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    /* styles */
-}
-/* Smartphones (portrait) ---------- */
-@media screen and (max-width: 320px) {
-    /* styles */
-}
-/* Smartphones (landscape) ---------- */
-@media screen and (min-width: 321px) {
-    /* styles */
-}
-/* Tablets, iPads (portrait and landscape) ---------- */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    /* styles */
-}
-/* Tablets, iPads (portrait) ---------- */
-@media screen and (min-width: 768px) {
-    /* styles */
-}
-/* Tablets, iPads (landscape) ---------- */
-@media screen and (min-width: 1024px) {
-    /* styles */
-}
-/* Desktops and laptops ---------- */
-@media screen and (min-width: 1224px) {
-    /* styles */
-}
-/* Large screens ---------- */
-@media screen and (min-width: 1824px) {
-    /* styles */
-}
