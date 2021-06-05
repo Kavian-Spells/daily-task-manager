@@ -1,69 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goal Roulette</title>
-    <link  href="./css/style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/audioPlayer.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="media.css" type="text/css">
 </head>
+
 <body>
     <div id="headerContainer">
         <h1 id="header">Goal Roulette</h1><br>
         <h2 id="quotes"><br><br></h2>
     </div>
-    
-    <div id="container">
-    <div id="tipBox"></div>
-    <div id="answerContainer">
-        <div id="terms">
-            <div id="termHeader">
-                <h3>First, pick a time frame for your goal!</h3>
-            </div>
-            <div id="choice">
-                <input type="radio" id="shortTerm" name="choice" value="short-term"> <label for="short-term">Short-Term</label>
-                <input type="radio" id="midTerm" name="choice" value="mid-term"> <label for="mid-term">Mid-Term</label>
-                <input type="radio" id="longTerm" name="choice" value="long-term"> <label for="long-term">Long-Term</label>
-            </div>
-        </div>
-            <div id="taskBox">
-                <button id="family" type="button">Family</button>
-                <div id="familyAnswer"></div>
-                <button id="spiritual" type="button" >Spiritual</button>
-                <div id="spiritualAnswer"></div>
-                <button id="financial" type="button">Financial</button>
-                <div id="financialAnswer"></div>
-                <button id="fitness" type="button">Fitness</button>
-                <div id="fitnessAnswer"></div>
-                <button id="career" type="button">Career</button>
-                <div id="careerAnswer"></div>
-                <button id="education" type="button">Education</button>
-                <div id="educationAnswer"></div>
-                <button id="social" type="button">Social</button>
-                <div id="socialAnswer"></div>
-                <button id="rouletteBox">Roulette</button>
-                <div id="rouletteBoxAnswer"></div>
-            </div>
-            <div class="timer-container">
-                <div><span id="min1">00</span>:<span id="sec1">00</span></div>
-                <div><span id="min2">00</span>:<span id="sec2">00</span></div>
-                <div><span id="min3">00</span>:<span id="sec3">00</span></div>
-                <div><span id="min4">00</span>:<span id="sec4">00</span></div>
-                <div><span id="min5">00</span>:<span id="sec5">00</span></div>
-                <div><span id="min6">00</span>:<span id="sec6">00</span></div>
-                <div><span id="min7">00</span>:<span id="sec7">00</span></div>
-                <div><span id="min8">00</span>:<span id="sec8">00</span></div>
-            </div>
-        </div>       
-        <div>
-        <button id="rouletteButton" type="button">Roulette!</button>
-        <span id="min">00</span>:<span id="sec">00</span>
-        </div>
-            
 
-        <!-- <div id="musicPlayer">
+    <div id="container">
+        <div id="tipBox"></div>
+        <div id="answerContainer">
+            <div id="terms">
+                <div id="termHeader">
+                    <h3>First, pick a time frame for your goal!</h3>
+                </div>
+                <div id="choice">
+                    <input type="radio" id="shortTerm" name="choice" value="short-term"> <label
+                        for="short-term">Short-Term</label>
+                    <input type="radio" id="midTerm" name="choice" value="mid-term"> <label
+                        for="mid-term">Mid-Term</label>
+                    <input type="radio" id="longTerm" name="choice" value="long-term"> <label
+                        for="long-term">Long-Term</label>
+                </div>
+            </div>
+            <div id="tasks">
+                <div id="taskHeader">
+                    <h3>Then, pick a category for your goal</h3>
+                </div>
+                <div id="taskBox">
+                    <div><button id="family" type="button">Family</button></div>
+                    <div id="familyAnswer"></div>
+                    <div><span id="min1">00:</span><span id="sec1">00</span></div>
+
+                    <div><button id="spiritual" type="button">Spiritual</button></div>
+                    <div id="spiritualAnswer"></div>
+                    <div><span class="time" id="min2">00:</span><span id="sec2">00</span></div>
+
+                    <div><button id="financial" type="button">Financial</button></div>
+                    <div id="financialAnswer"></div>
+                    <div><span class="time" id="min3">00:</span><span id="sec3">00</span></div>
+
+                    <div><button id="fitness" type="button">Fitness</button></div>
+                    <div id="fitnessAnswer"></div>
+                    <div><span class="time" id="min4">00:</span><span id="sec4">00</span></div>
+
+                    <div><button class="time" id="career" type="button">Career</button></div>
+                    <div id="careerAnswer"></div>
+                    <div><span class="time" id="min5">00:</span><span id="sec5">00</span></div>
+
+                    <div><button id="education" type="button">Education</button></div>
+                    <div id="educationAnswer"></div>
+                    <div><span class="time" id="min6">00:</span><span id="sec6">00</span></div>
+
+                    <div><button id="social" type="button">Social</button></div>
+                    <div id="socialAnswer"></div>
+                    <div><span class="time" id="min7">00:</span><span id="sec7">00</span></div>
+
+                    <div><button id="rouletteBox">Roulette</button></div>
+                    <div id="rouletteBoxAnswer"></div>
+                    <div><span class="time" id="min8">00:</span><span id="sec8">00</span></div>
+                </div><br>
+            </div>
+        </div>
+        <br><br>
+        <div>
+            <button id="rouletteButton" type="button">Roulette!</button>
+            <span id="min">00:</span><span id="sec">00</span>
+        </div>
+
+
+        <div id="musicPlayer">
             <audio src="" controls id="audioPlayer">
                 Sorry, your browser doesn't support these fire beats!!!
             </audio>
@@ -75,9 +92,9 @@
                 <li id="4"><a href="./audio-files/30sCruisin_Along.mp3">Cruisin Along</a></li>
                 <li id="5"><a href="./audio-files/30sReaching_Out.mp3">Reaching Out</a></li>
             </ul>
-        </div> -->
-        
+        </div>
 
+        <br>
         <h3 id="threat">Tell Your Friends...Or Else &#x1F608;</h3>
         <div id="socialMedia">
             <a href="https://facebook.com/" target="_blank" class="fa fa-facebook"></a>
@@ -85,13 +102,18 @@
             <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous"></script>
     <script src="./scripts/app.js"></script>
     <script src="./scripts/audioPlayer.js"></script>
-    <script src ="./scripts/goals.js"></script>
+    <script src="./scripts/goals.js"></script>
     <script src="scripts/timer_clock.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </body>
+
 </html>

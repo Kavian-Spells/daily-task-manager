@@ -50,6 +50,8 @@ document.querySelector("#fitness").addEventListener('click', start_timer4);
 document.querySelector("#career").addEventListener('click', start_timer5);
 document.querySelector("#education").addEventListener('click', start_timer6);
 document.querySelector("#social").addEventListener('click', start_timer7);
+document.querySelector("#rouletteButton").addEventListener('click', start_timer8);
+
 
 function timerPrompt() {
   var text;
@@ -306,6 +308,7 @@ function radio_status7() {
 
 function start_timer8() {
   radio_status8();
+  sec = 15;
   
   setInterval(() => {
     if (min8 == 0 && sec8 == 0) {
