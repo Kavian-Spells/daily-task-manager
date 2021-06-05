@@ -446,7 +446,7 @@ $("#family").click(function(){
         
     }
     else if(document.getElementById("midTerm").checked == true){
-        document.getElementById("familyAnswer").value = medFamilyAnswer;
+        document.getElementById("familyAnswer").innerHTML = medFamilyAnswer;
         document.getElementById("tipBox").innerHTML = familyTipBox;
         document.getElementById("spiritual").remove();
         document.getElementById("spiritualAnswer").remove();
@@ -464,7 +464,7 @@ $("#family").click(function(){
         document.getElementById("rouletteBoxAnswer").remove();
     }
     else if(document.getElementById("longTerm").checked == true){
-        document.getElementById("familyAnswer").value = longFamilyAnswer;
+        document.getElementById("familyAnswer").innerHTML = longFamilyAnswer;
         document.getElementById("tipBox").innerHTML = familyTipBox;
         document.getElementById("spiritual").remove();
         document.getElementById("spiritualAnswer").remove();
