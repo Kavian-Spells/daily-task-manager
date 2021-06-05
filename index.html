@@ -8,6 +8,7 @@
     <link  href="./css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/audioPlayer.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="media.css" type="text/css">
 </head>
 <body>
     <div id="headerContainer">
@@ -16,44 +17,67 @@
     </div>
     
     <div id="container">
-    <div id="tipBox"></div>
+        <div id="tipBox"></div>
         <div id="answerContainer">
-        <div id="terms">
-            <div id="termHeader">
-                <h3>First, pick a time frame for your goal!</h3>
+            <div id="terms">
+                <div id="termHeader">
+                    <h3>First, pick a time frame for your goal!</h3>
+                </div>
+                <div id="choice">
+                    <input type="radio" id="shortTerm" name="choice" value="short-term"> <label for="short-term">Short-Term</label>
+                    <input type="radio" id="midTerm" name="choice" value="mid-term"> <label for="mid-term">Mid-Term</label>
+                    <input type="radio" id="longTerm" name="choice" value="long-term"> <label for="long-term">Long-Term</label>
+                </div>
             </div>
-            <div id="choice">
-                <input type="radio" id="shortTerm" name="choice" value="short-term"> <label for="short-term">Short-Term</label>
-                <input type="radio" id="midTerm" name="choice" value="mid-term"> <label for="mid-term">Mid-Term</label>
-                <input type="radio" id="longTerm" name="choice" value="long-term"> <label for="long-term">Long-Term</label>
+            <div id="tasks">
+                <div id="taskHeader">
+                    <h3>Then, pick a category for your goal</h3>
+                </div>
+                <div id="taskBox">
+                    <div><button id="family" type="button">Family</button></div>
+                    <div id="familyAnswer"></div>
+                    <div><span id="min1">00:</span><span id="sec1">00</span></div>
+                    
+                    <div><button id="spiritual" type="button" >Spiritual</button></div>
+                    <div id="spiritualAnswer"></div>
+                    <div><span class="time" id="min2">00:</span><span id="sec2">00</span></div>
+                    
+                    <div><button id="financial" type="button">Financial</button></div>
+                    <div id="financialAnswer"></div>
+                    <div><span class="time" id="min3">00:</span><span id="sec3">00</span></div>
+                    
+                    <div><button id="fitness" type="button">Fitness</button></div>
+                    <div id="fitnessAnswer"></div>
+                    <div><span class="time" id="min4">00:</span><span id="sec4">00</span></div>
+                    
+                    <div><button class="time" id="career" type="button">Career</button></div>
+                    <div id="careerAnswer"></div>
+                    <div><span class="time" id="min5">00:</span><span id="sec5">00</span></div>
+                    
+                    <div><button id="education" type="button">Education</button></div>
+                    <div id="educationAnswer"></div>
+                    <div><span class="time" id="min6">00:</span><span id="sec6">00</span></div>
+                    
+                    <div><button id="social" type="button">Social</button></div>
+                    <div id="socialAnswer"></div>
+                    <div><span class="time" id="min7">00:</span><span id="sec7">00</span></div>
+                    
+                    <div><button id="rouletteBox">Roulette</button></div>
+                    <div id="rouletteBoxAnswer"></div>
+                    <div><span class="time" id="min8">00:</span><span id="sec8">00</span></div>
+                </div><br>
             </div>
-        </div>
-            <div id="taskBox">
-                <button id="family" type="button">Family</button>
-                <div id="familyAnswer"></div><span id="min1"></span>:<span id="sec1"></span>
-                <button id="spiritual" type="button" >Spiritual</button>
-                <div id="spiritualAnswer"></div><span id="min2"></span>:<span id="sec2"></span>
-                <button id="financial" type="button">Financial</button>
-                <div id="financialAnswer"></div><span id="min3"></span>:<span id="sec3"></span>
-                <button id="fitness" type="button">Fitness</button>
-                <div id="fitnessAnswer"></div><span id="min3"></span>:<span id="sec3"></span>
-                <button id="career" type="button">Career</button>
-                <div id="careerAnswer"></div><span id="min4"></span>:<span id="sec4"></span>
-                <button id="education" type="button">Education</button>
-                <div id="educationAnswer"></div><span id="min5"></span>:<span id="sec5"></span>
-                <button id="social" type="button">Social</button>
-                <div id="socialAnswer"></div><span id="min6"></span>:<span id="sec6"></span>
-                <button id="rouletteBox">Roulette</button>
-                <div id="rouletteBoxAnswer"></div><span id="min7"></span>:<span id="sec7"></span>
-            </div><br>
-        </div>       
-        <div>
+    </div>    
+    <br><br>   
+    <div>
         <button id="rouletteButton" type="button">Roulette!</button>
-        <span id="min">00</span>:<span id="sec">00</span>
-        </div>
-            
+        <span id="min">00:</span><span id="sec">00</span>
+    </div>
 
-        <!-- <div id="musicPlayer">
+    <br>
+    
+
+        <div id="musicPlayer">
             <audio src="" controls id="audioPlayer">
                 Sorry, your browser doesn't support these fire beats!!!
             </audio>
@@ -65,9 +89,9 @@
                 <li id="4"><a href="./audio-files/30sCruisin_Along.mp3">Cruisin Along</a></li>
                 <li id="5"><a href="./audio-files/30sReaching_Out.mp3">Reaching Out</a></li>
             </ul>
-        </div> -->
+        </div>
         
-
+        <br>
         <h3 id="threat">Tell Your Friends...Or Else &#x1F608;</h3>
         <div id="socialMedia">
             <a href="https://facebook.com/" target="_blank" class="fa fa-facebook"></a>
