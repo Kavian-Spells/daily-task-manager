@@ -65,6 +65,8 @@ textarea{
     display: grid;
     grid-template-columns: auto auto auto;
     border: black 1px solid;
+    width: 100%;
+    
 }
 
 
