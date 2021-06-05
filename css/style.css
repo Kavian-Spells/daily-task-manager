@@ -12,6 +12,7 @@ body{
     position: absolute;
     top: 0;
     right: 0;
+
 }
 
 input[type=radio]{
@@ -29,7 +30,8 @@ textarea{
     border-style: outset;
     width: 56%;
     background-color: steelblue;
-    height: 470px;
+    height: 100%;
+    width: 100%;
 }
 
 #taskHeader {
@@ -101,7 +103,10 @@ h3 {
 #terms {
     border-style: outset;
     height: 225px;
-    width: 40%;
+    width: 100%;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
     background-color: steelblue;
 }
 
