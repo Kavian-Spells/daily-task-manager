@@ -1,9 +1,9 @@
 body{
     background-image: url("https://image.freepik.com/free-vector/calm-mountain-forest-wild-nature-scene-landscape-monochrome-illustration_7081-1822.jpg");
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    image-rendering: -webkit-optimize-contrast;
+    /* background-size: cover; */
+    /* background-repeat:repeat; */
+    /* image-rendering: -webkit-optimize-contrast; */
 }
    
 
@@ -25,11 +25,28 @@ textarea{
     resize: none;
 }
 
+#tasks {
+    border-style: outset;
+    width: 56%;
+    background-color: steelblue;
+    height: 470px;
+}
+
+#taskHeader {
+    display: flex;
+    background-color: gainsboro;
+    border-style: inherit;
+    color: steelblue;
+    justify-content: space-around;
+    flex-basis: 100%;
+}
+
 #taskBox{
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 21% 68% 9%;
+    justify-items: flex-start;
+    align-items: center;
     background-color: steelblue;
-    border-style: outset;
     font-size: 20px;
 }
 
@@ -57,6 +74,10 @@ textarea{
     cursor: pointer;
 }
 
+#rouletteDiv {
+    height: 100px;
+}
+
 #rouletteButton{
     font-size: 50px;
     background-color: red;
@@ -80,7 +101,7 @@ h3 {
 #terms {
     border-style: outset;
     height: 225px;
-    width: 65%;
+    width: 40%;
     background-color: steelblue;
 }
 
@@ -109,13 +130,13 @@ h3 {
 
 
 #container {
-    padding: 200px;
-    margin: 0;
+    padding: 75px 155px;
     width: 70%;
-    height: 90vh;
+    /* height: 90vh; */
     display: grid;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 3%;
     justify-items: center;
     align-content: space-evenly;
     align-items: center;
@@ -127,6 +148,7 @@ h3 {
 
 #quotes{
     text-align: center;
+    color: whitesmoke;
 }
 
 #headerContainer{
@@ -143,15 +165,17 @@ h3 {
 #header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+    color: whitesmoke;
 }
 
 #tipBox{
-    margin-bottom: 3%;
+    margin-bottom: 4%;
     display: flex;
     justify-content: center;
     align-content: center;
     background-color: slategray;
     font-size: 30px;
+    color: whitesmoke;
 }
 
 
@@ -327,9 +351,13 @@ h3 {
     cursor: pointer;
 }
 
+span {
+    color: gainsboro;
+}
+
 #familyAnswer {
     height: 43px;
-    width: 400px;
+    width: 95%;
     background-color: gainsboro;
     border-style: outset;
 
@@ -337,7 +365,7 @@ h3 {
 
 #spiritualAnswer {
     height: 43px;
-    width: 400px;
+    width: 95%;
     background-color: gainsboro;
     border-style: outset;
 
@@ -345,7 +373,7 @@ h3 {
 
 #financialAnswer{
     height: 43px;
-    width: 400px;
+    width: 95%;
     background-color: gainsboro;
     border-style: outset;
 
@@ -353,7 +381,7 @@ h3 {
 
 #fitnessAnswer {
     height: 43px;
-    width: 400px;
+    width: 95%;
     background-color: gainsboro;
     border-style: outset;
 
@@ -361,7 +389,7 @@ h3 {
 
 #careerAnswer {
     height: 43px;
-    width: 400px;
+    width: 95%;
     background-color: gainsboro;
     border-style: outset;
 
@@ -369,7 +397,7 @@ h3 {
 
 #educationAnswer {
     height: 43px;
-    width: 400px;
+    width: 95%;
     background-color: gainsboro;
     border-style: outset;
 
@@ -377,14 +405,14 @@ h3 {
 
 #socialAnswer {
     height: 43px;
-    width: 400px;
+    width: 95%;
     background-color: gainsboro;
     border-style: outset;
 }
 
 #rouletteBoxAnswer {
     height: 43px;
-    width: 400px;
+    width: 95%;
     background-color: gainsboro;
     border-style: outset;
 }
@@ -395,13 +423,11 @@ h3 {
     width: 50px;
     text-align: center;
     text-decoration: none;
-  }
-  
-  .fa:hover {
+}
+
+.fa:hover {
     opacity: 0.7;
   }
-  
-  
   .fa-facebook {
     background: #3B5998;
     color: white;
